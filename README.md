@@ -1,12 +1,12 @@
 # oceanspray-site
 
-Marketing site for **Ocean Spray FL** — Jekyll site intended for
+Marketing site for **Ocean Spray FL** - Jekyll site intended for
 GitHub Pages, mirroring the structure of `jaxlee-site`.
 
 ## What it is
 
 - **Live URL (planned):** `https://jaxlee-digital.github.io/oceansprayfl`
-- **Custom domain:** `oceansprayfl.com` (not yet attached — set
+- **Custom domain:** `oceansprayfl.com` (not yet attached - set
   `baseurl: ""` in `_config.yml` when it is)
 - **Repo (planned):** `https://github.com/jaxlee-digital/oceansprayfl`
 - **Local clone:** `~/.openclaw/workspace/oceanspray-site`
@@ -18,7 +18,7 @@ GitHub Pages, mirroring the structure of `jaxlee-site`.
 Refocused away from general spray-foam insulation toward:
 
 1. **Seawall stabilization** (lead service, polyurethane injection)
-2. **Concrete lifting** (paired emphasis — same technology, same crew)
+2. **Concrete lifting** (paired emphasis - same technology, same crew)
 3. **Metal building insulation** (kept as secondary)
 
 General residential/commercial insulation has been **dropped** from
@@ -102,19 +102,19 @@ Full notes (why each flag, host-Ruby alternative, gotchas) in
 ## Deploy
 
 GitHub Pages **default branch build** (no Actions workflow). Push to
-the default branch and Pages rebuilds within 1–2 minutes.
+the default branch and Pages rebuilds within 1-2 minutes.
 
 ## Required asset additions
 
 The site references images that **do not exist yet** in `assets/`.
 Add these before going live (placeholder gradients render until then):
 
-- `assets/images/hero-seawall.jpg` — wide hero image of a seawall /
+- `assets/images/hero-seawall.jpg` - wide hero image of a seawall /
   coastal site (used in `_layouts/home.html` background)
-- `assets/images/services/seawall-cover.jpg` — service card / detail
-- `assets/images/services/concrete-cover.jpg` — service card / detail
-- `assets/images/services/metal-building-cover.jpg` — service card / detail
-- `assets/favicon.ico` — favicon
+- `assets/images/services/seawall-cover.jpg` - service card / detail
+- `assets/images/services/concrete-cover.jpg` - service card / detail
+- `assets/images/services/metal-building-cover.jpg` - service card / detail
+- `assets/favicon.ico` - favicon
 
 Plus optional post cover images for each `_posts/*.md` entry
 (`cover:` front-matter field).
@@ -153,6 +153,6 @@ When `oceansprayfl.com` gets pointed at GitHub Pages:
 
 ## Related
 
-- `infra/oceanspray-site/README.md` — operational doc (deploy, DNS, etc.)
-- `personal/business/ocean-spray-fl.md` — business context, pivot notes
-- Sister site: `jaxlee-site/` — same architecture, different domain
+- `infra/oceanspray-site/README.md` - operational doc (deploy, DNS, etc.)
+- `personal/business/ocean-spray-fl.md` - business context, pivot notes
+- Sister site: `jaxlee-site/` - same architecture, different domain

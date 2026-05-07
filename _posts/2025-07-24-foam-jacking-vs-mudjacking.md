@@ -5,8 +5,8 @@ author: Ocean Spray FL
 tags: [concrete-lifting, foam-injection, swfl]
 excerpt: >-
   Thinking about mudjacking to fix your sunken concrete? Here's why
-  polyurethane foam jacking — also called foam lifting or slab
-  jacking — is the cleaner, faster, longer-lasting solution for
+  polyurethane foam jacking, also called foam lifting or slab
+  jacking, is the cleaner, faster, longer-lasting solution for
   concrete repair in SWFL.
 ---
 
@@ -25,7 +25,7 @@ the slab back to grade.
 
 It works. But:
 
-- The slurry is **heavy** — significantly heavier than the soil
+- The slurry is **heavy.** Significantly heavier than the soil
   it's replacing.
 - It can **wash out** over time, especially in coastal or
   high-water-table soil.
@@ -46,22 +46,22 @@ filling voids, lifting the slab, and binding the supporting soil.
 
 Compared to mudjacking, foam jacking is:
 
-- **Lighter** — won't reload the failed soil column.
-- **Waterproof** — won't wash out or break down with moisture.
-- **More precise** — small holes, controlled lift, finer
+- **Lighter.** Won't reload the failed soil column.
+- **Waterproof.** Won't wash out or break down with moisture.
+- **More precise.** Small holes, controlled lift, finer
   adjustments.
-- **Faster** — the foam reaches working strength in minutes, not
+- **Faster.** The foam reaches working strength in minutes, not
   hours. Most slabs are walk-on the same day, vehicle-ready
   shortly after.
-- **Cleaner** — minimal mess and almost-invisible patches.
+- **Cleaner.** Minimal mess and almost-invisible patches.
 
 ## When each one makes sense
 
 Mudjacking can be a fine choice for inland slabs in stable soil,
 where weight isn't a concern and budget is the deciding factor.
 
-For SWFL — where soil moves, water tables are high, and the same
-soil problems that caused settlement are still present —
+For SWFL, where soil moves, water tables are high, and the same
+soil problems that caused settlement are still present,
 polyurethane foam is almost always the right call. It costs more
 per cubic foot of fill, but it lasts longer and doesn't make the
 underlying problem worse.

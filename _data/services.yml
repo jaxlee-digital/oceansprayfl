@@ -2,9 +2,10 @@
 - key: seawall
   title: Seawall Stabilization
   blurb: >-
-    Lightweight, eco-friendly polyurethane injection. Fills voids,
-    reinforces soil, and stabilizes failing seawalls without the weight
-    or damage of concrete.
+    Lightweight, eco-friendly polyurethane injection, at about half
+    the cost of full seawall replacement. Fills voids, reinforces soil,
+    and stabilizes failing seawalls without the weight or damage of
+    concrete.
   url: /services/seawall-stabilization/
   cover: /assets/images/services/seawall-cover.jpg
   bullets:
@@ -18,7 +19,7 @@
   title: Concrete Lifting
   blurb: >-
     Same polyurethane technology, applied to sunken slabs. Lifts and
-    levels driveways, pool decks, sidewalks, and warehouse floors —
+    levels driveways, pool decks, sidewalks, and warehouse floors,
     cleaner and faster than mudjacking.
   url: /services/concrete-lifting/
   cover: /assets/images/services/concrete-cover.jpg
@@ -32,9 +33,9 @@
 - key: metal-building
   title: Metal Building Insulation
   blurb: >-
-    Closed-cell spray foam for metal buildings — residential, commercial,
-    and agricultural. Stops condensation, controls temperature, and
-    seals the envelope.
+    Closed-cell spray foam for metal buildings, residential,
+    commercial, and agricultural. Stops condensation, controls
+    temperature, and seals the envelope.
   url: /services/metal-building-insulation/
   cover: /assets/images/services/metal-building-cover.jpg
   bullets:

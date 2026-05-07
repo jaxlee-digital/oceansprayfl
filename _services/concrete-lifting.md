@@ -2,7 +2,7 @@
 title: Concrete Lifting
 slug: concrete-lifting
 summary: >-
-  Polyurethane foam jacking — the cleaner, faster, longer-lasting
+  Polyurethane foam jacking. The cleaner, faster, longer-lasting
   way to lift sunken concrete. Driveways, pool decks, sidewalks,
   warehouse floors. Walk on it the same day.
 cover: /assets/images/services/concrete-cover.jpg
@@ -26,28 +26,28 @@ traffic shortly after.
 ## Why foam beats mudjacking
 
 Traditional mudjacking pumps a heavy slurry of cement, sand, and
-water under the slab. It works — for a while. Then the slurry adds
+water under the slab. It works for a while. Then the slurry adds
 weight to the same soil that failed in the first place, the
 problem returns, and you're back where you started.
 
 Polyurethane foam is the modern replacement:
 
-- **Lightweight** — won't reload the failed soil column.
-- **Waterproof** — won't wash out or erode.
-- **Structural** — engineered compressive strength.
-- **Clean** — small injection holes (about the size of a dime) vs.
+- **Lightweight.** Won't reload the failed soil column.
+- **Waterproof.** Won't wash out or erode.
+- **Structural.** Engineered compressive strength.
+- **Clean.** Small injection holes (about the size of a dime) vs.
   large slurry ports.
-- **Fast** — the slab is usable the same day.
+- **Fast.** The slab is usable the same day.
 
 ## What we lift
 
-- **Driveways** — sunken approaches and trip-hazard joints.
-- **Walkways and sidewalks** — eliminate trip hazards and ponding.
-- **Pool decks and patios** — lift settled slabs without tearing
+- **Driveways.** Sunken approaches and trip-hazard joints.
+- **Walkways and sidewalks.** Eliminate trip hazards and ponding.
+- **Pool decks and patios.** Lift settled slabs without tearing
   out and re-pouring.
-- **Warehouse and commercial floors** — minimal disruption to
+- **Warehouse and commercial floors.** Minimal disruption to
   operations; usually done in a single shift.
-- **Garage floors and slab transitions** — fix the bump where the
+- **Garage floors and slab transitions.** Fix the bump where the
   garage meets the driveway.
 
 ## Common causes in SWFL
@@ -70,7 +70,7 @@ something that should be re-poured.
 
 ### Pairs naturally with
 
-**[Seawall Stabilization]({{ '/services/seawall-stabilization/' | relative_url }})** — the same equipment, the same crew, often the same trip. If your pool deck is sinking because the soil behind your seawall is washing out, we fix both problems together.
+**[Seawall Stabilization]({{ '/services/seawall-stabilization/' | relative_url }}).** The same equipment, the same crew, often the same trip. If your pool deck is sinking because the soil behind your seawall is washing out, we fix both problems together.
 
 ### Free assessments
 

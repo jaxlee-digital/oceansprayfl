@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Services
-subtitle: "Polyurethane injection, done right — for seawalls, slabs, and metal buildings."
+subtitle: "Polyurethane injection, done right. For seawalls, slabs, and metal buildings."
 permalink: /services/
 ---
 

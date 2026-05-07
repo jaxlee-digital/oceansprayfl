@@ -1,12 +1,12 @@
 ---
-title: "How invasive iguanas damage SWFL seawalls — and how foam stabilization restores them"
+title: "How invasive iguanas damage SWFL seawalls, and how foam stabilization restores them"
 date: 2026-02-13
 author: Ocean Spray FL
 tags: [seawall, swfl, foam-injection]
 excerpt: >-
   Green iguanas are a quiet structural threat to Southwest Florida
   seawalls. Here's what their burrowing actually does to the soil
-  behind your wall — and how polyurethane injection puts it back
+  behind your wall, and how polyurethane injection puts it back
   together.
 ---
 
@@ -18,8 +18,8 @@ water.
 ## What iguanas do to seawalls
 
 Green iguanas are prolific burrowers. They dig into the soft fill
-behind seawalls — usually right at the cap line where it's easiest
-to start a tunnel — and excavate networks of voids that can run
+behind seawalls, usually right at the cap line where it's easiest
+to start a tunnel, and excavate networks of voids that can run
 several feet deep. A single mature iguana can move a surprising
 amount of dirt in a season.
 
@@ -41,7 +41,7 @@ much bigger than it appears.
 
 ## Why patching with concrete doesn't work
 
-The first instinct is to fill the hole with something heavy —
+The first instinct is to fill the hole with something heavy:
 concrete, sand-cement slurry, anything to make the empty space go
 away. The problem is that you're adding weight to soil that's
 already failing, on top of a wall that's already stressed. The

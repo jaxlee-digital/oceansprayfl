@@ -2,7 +2,7 @@
 title: Metal Building Insulation
 slug: metal-building-insulation
 summary: >-
-  Closed-cell spray foam for metal buildings — residential, commercial,
+  Closed-cell spray foam for metal buildings, residential, commercial,
   and agricultural. Stops condensation, controls temperature, and
   seals the envelope.
 cover: /assets/images/services/metal-building-cover.jpg
@@ -24,19 +24,19 @@ source. It's a continuous barrier that:
 
 - **Stops condensation** by eliminating the cold metal surface that
   air contacts.
-- **Air-seals the envelope** — no gaps, no batting, no settling.
+- **Air-seals the envelope.** No gaps, no batting, no settling.
 - **Adds structural rigidity** to the panel system.
 - **Insulates** with a high R-value per inch.
 
 ## Where we work
 
-- **Pole barns and shops** — keep stored vehicles, equipment, and
+- **Pole barns and shops.** Keep stored vehicles, equipment, and
   tools dry year-round.
-- **Agricultural buildings** — protect feed, equipment, and stock
+- **Agricultural buildings.** Protect feed, equipment, and stock
   from condensation and heat.
-- **Commercial warehouses** — control internal climate without
+- **Commercial warehouses.** Control internal climate without
   fighting the building.
-- **Residential metal buildings** — guest houses, casitas, ADUs,
+- **Residential metal buildings.** Guest houses, casitas, ADUs,
   hobby workshops.
 
 ## What you get
@@ -45,7 +45,7 @@ source. It's a continuous barrier that:
   deck and wall panels.
 - Even thickness, professionally finished.
 - Vapor barrier and air barrier in one application.
-- Long service life — closed-cell foam doesn't sag, settle, or get
+- Long service life. Closed-cell foam doesn't sag, settle, or get
   eaten by pests.
 
 ## Project profile

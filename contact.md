@@ -19,7 +19,7 @@ If you'd rather email, include:
 
 - Property address (or general area)
 - A short description of the problem (sinking slab, leaning seawall, void behind cap, etc.)
-- A few photos if you can — angles showing the affected area and any visible cracks or depressions
+- A few photos if you can, angles showing the affected area and any visible cracks or depressions
 - The best phone number to reach you at
 
 We'll get back to you with next steps and, when possible, a same- or

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Service Area
-subtitle: "Southwest Florida — Collier, Lee, and Hendry counties."
+subtitle: "Southwest Florida. Collier, Lee, and Hendry counties."
 permalink: /service-area/
 ---
 
@@ -19,8 +19,8 @@ inland SWFL.
 {% for county in site.business.counties %}- {{ county }}
 {% endfor %}
 
-If your property is nearby but not on the list, call us anyway —
-we travel for the right project, and we'll let you know if it's a
+If your property is nearby but not on the list, call us anyway.
+We travel for the right project, and we'll let you know if it's a
 fit before anyone wastes a trip.
 
 ## Why local matters

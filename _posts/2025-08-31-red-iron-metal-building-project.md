@@ -1,23 +1,23 @@
 ---
-title: "Red iron metal building — project profile"
+title: "Red iron metal building, project profile"
 date: 2025-08-31
 author: Ocean Spray FL
 tags: [metal-building, insulation, project-profile]
 excerpt: >-
   A red-iron commercial metal building in SWFL gets fully closed-cell
-  spray-foamed — what we did, why, and what the owner is seeing
+  spray-foamed. What we did, why, and what the owner is seeing
   now.
 ---
 
 This one's a quick walkthrough of a recent metal-building
-insulation job — useful if you're considering closed-cell SPF on
+insulation job, useful if you're considering closed-cell SPF on
 a similar structure.
 
 ## The building
 
 Red-iron commercial metal building, roughly 5,000 square feet,
 intended as a workshop and storage space. Single-skin metal panels
-on the walls and roof — no existing insulation. The owner had
+on the walls and roof, no existing insulation. The owner had
 already lost some stored electronics to condensation drip and was
 about to lose more.
 
@@ -38,15 +38,15 @@ in sections rather than emptying the whole building.
 
 Closed-cell foam was the right product here because it:
 
-- **Air-seals** the envelope — no gaps, no penetrations.
-- **Vapor-barriers** in one step — no separate poly sheet needed.
+- **Air-seals** the envelope. No gaps, no penetrations.
+- **Vapor-barriers** in one step. No separate poly sheet needed.
 - **Adds rigidity** to the panel-and-purlin system.
 - **Won't sag** off the underside of a roof deck the way batt
   insulation does over time.
 
 ## The result
 
-- Condensation gone — the underside of the roof is no longer
+- Condensation gone. The underside of the roof is no longer
   hitting dew point on the interior surface.
 - Internal temperature swings dropped noticeably; the building
   is usable year-round without large HVAC.
