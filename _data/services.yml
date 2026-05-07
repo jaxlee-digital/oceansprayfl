@@ -1,0 +1,45 @@
+# Service cards shown on home page. Order matters.
+- key: seawall
+  title: Seawall Stabilization
+  blurb: >-
+    Lightweight, eco-friendly polyurethane injection. Fills voids,
+    reinforces soil, and stabilizes failing seawalls without the weight
+    or damage of concrete.
+  url: /services/seawall-stabilization/
+  cover: /assets/images/services/seawall-cover.jpg
+  bullets:
+    - Void filling behind seawall caps
+    - Soil reinforcement
+    - Weep hole installation
+    - Erosion channel sealing
+  featured: true
+
+- key: concrete
+  title: Concrete Lifting
+  blurb: >-
+    Same polyurethane technology, applied to sunken slabs. Lifts and
+    levels driveways, pool decks, sidewalks, and warehouse floors —
+    cleaner and faster than mudjacking.
+  url: /services/concrete-lifting/
+  cover: /assets/images/services/concrete-cover.jpg
+  bullets:
+    - Driveways and walkways
+    - Pool decks and patios
+    - Warehouse and commercial floors
+    - Sidewalks and curbs
+  featured: true
+
+- key: metal-building
+  title: Metal Building Insulation
+  blurb: >-
+    Closed-cell spray foam for metal buildings — residential, commercial,
+    and agricultural. Stops condensation, controls temperature, and
+    seals the envelope.
+  url: /services/metal-building-insulation/
+  cover: /assets/images/services/metal-building-cover.jpg
+  bullets:
+    - Pole barns and shops
+    - Agricultural buildings
+    - Commercial warehouses
+    - Residential metal buildings
+  featured: false

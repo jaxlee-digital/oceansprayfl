@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — Seawall Stabilization & Concrete Lifting in SWFL{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        referrerpolicy="no-referrer">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body class="page--{{ page.section | default: page.layout | default: 'root' }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand__name">{{ site.title }}</span>
+      </a>
+
+      <button type="button" class="site-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav" data-nav-main-toggle>
+        <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        {% for item in site.data.nav %}
+          {% if item.children %}
+            {% assign menu_id = item.title | slugify %}
+            {% assign is_in_menu = false %}
+            {% if page.url == item.url %}{% assign is_in_menu = true %}{% endif %}
+            {% for child in item.children %}
+              {% if page.url == child.url %}{% assign is_in_menu = true %}{% endif %}
+            {% endfor %}
+            <div class="site-nav__menu" data-nav-menu>
+              <button type="button"
+                      class="site-nav__menu-btn{% if is_in_menu %} is-current{% endif %}"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      aria-controls="nav-{{ menu_id }}"
+                      data-nav-toggle>
+                {{ item.title }}
+                <span class="site-nav__chevron" aria-hidden="true">▾</span>
+              </button>
+              <ul class="site-nav__submenu" id="nav-{{ menu_id }}" role="menu" hidden>
+                {% for child in item.children %}
+                  <li role="none">
+                    <a href="{{ child.url | relative_url }}" role="menuitem"{% if page.url == child.url %} class="is-current" aria-current="page"{% endif %}>{{ child.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% else %}
+            <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
+          {% endif %}
+        {% endfor %}
+        <a class="site-nav__cta" href="{{ '/contact/' | relative_url }}">Get a Quote</a>
+      </nav>
+    </div>
+
+    <div class="site-header__bar">
+      <a href="{{ site.business.phone_href }}" class="site-header__phone">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        {{ site.business.phone }}
+      </a>
+      <span class="site-header__sep" aria-hidden="true">·</span>
+      <span class="site-header__hq">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        {{ site.business.hq }}
+      </span>
+    </div>
+
+    <script>
+      (function () {
+        var mainToggle = document.querySelector('[data-nav-main-toggle]');
+        var siteNav = document.getElementById('site-nav');
+        if (mainToggle && siteNav) {
+          mainToggle.addEventListener('click', function () {
+            var expanded = mainToggle.getAttribute('aria-expanded') === 'true';
+            mainToggle.setAttribute('aria-expanded', String(!expanded));
+            siteNav.classList.toggle('is-open', !expanded);
+            document.body.classList.toggle('nav-open', !expanded);
+          });
+          document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && mainToggle.getAttribute('aria-expanded') === 'true') {
+              mainToggle.setAttribute('aria-expanded', 'false');
+              siteNav.classList.remove('is-open');
+              document.body.classList.remove('nav-open');
+            }
+          });
+        }
+
+        var menus = document.querySelectorAll('[data-nav-menu]');
+        if (!menus.length) return;
+        function closeAll(exceptBtn) {
+          menus.forEach(function (m) {
+            var btn = m.querySelector('[data-nav-toggle]');
+            if (btn === exceptBtn) return;
+            btn.setAttribute('aria-expanded', 'false');
+            m.querySelector('.site-nav__submenu').hidden = true;
+          });
+        }
+        menus.forEach(function (menu) {
+          var btn = menu.querySelector('[data-nav-toggle]');
+          var panel = menu.querySelector('.site-nav__submenu');
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            closeAll(btn);
+            btn.setAttribute('aria-expanded', String(!expanded));
+            panel.hidden = expanded;
+          });
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('[data-nav-menu]')) closeAll();
+        });
+      })();
+    </script>
+  </header>
+
+  <main class="site-main" id="main">
+    {{ content }}
+  </main>
+
+  <section class="site-cta">
+    <div class="site-cta__inner">
+      <h2>Got a sinking seawall or slab? Let's take a look.</h2>
+      <p>Free, no-obligation assessments across Southwest Florida.</p>
+      <p class="site-cta__actions">
+        <a class="btn btn--primary" href="{{ site.business.phone_href }}">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          Call {{ site.business.phone }}
+        </a>
+        <a class="btn btn--ghost" href="{{ '/contact/' | relative_url }}">Request a Quote</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <p class="site-footer__brand">{{ site.title }}</p>
+        <p class="site-footer__tag">{{ site.tagline }}</p>
+        <p>{{ site.business.hq }}</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="{{ '/services/seawall-stabilization/' | relative_url }}">Seawall Stabilization</a></li>
+          <li><a href="{{ '/services/concrete-lifting/' | relative_url }}">Concrete Lifting</a></li>
+          <li><a href="{{ '/services/metal-building-insulation/' | relative_url }}">Metal Building Insulation</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="{{ site.business.phone_href }}">{{ site.business.phone }}</a></li>
+          <li><a href="{{ site.business.email_href }}">{{ site.business.email }}</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Request a quote</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Service Area</h3>
+        <ul>
+          {% for city in site.business.service_area %}
+            <li>{{ city }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__base">
+      <p>© {{ 'now' | date: "%Y" }} {{ site.business.name }}. All rights reserved.</p>
+      {% if site.social %}
+      <ul class="social-links" aria-label="Social links">
+        {% for link in site.social %}
+          <li>
+            <a href="{{ link.url }}" rel="me noopener" aria-label="{{ link.name }}" title="{{ link.name }}">
+              <i class="{{ link.icon }}" aria-hidden="true"></i>
+            </a>
+          </li>
+        {% endfor %}
+        <li>
+          <a href="{{ '/feed.xml' | relative_url }}" aria-label="RSS feed" title="RSS">
+            <i class="fa-solid fa-rss" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      {% endif %}
+    </div>
+  </footer>
+</body>
+</html>

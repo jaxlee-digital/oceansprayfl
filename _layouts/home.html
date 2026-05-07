@@ -1,0 +1,116 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Southwest Florida</p>
+    <h1 class="hero__title">Stop the sink. Save the seawall.</h1>
+    <p class="hero__lede">
+      Ocean Spray FL stabilizes failing seawalls and lifts sunken
+      concrete with certified, eco-friendly polyurethane resin —
+      lighter, stronger, and far less invasive than concrete.
+    </p>
+    <p class="hero__actions">
+      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Get a Free Quote</a>
+      <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        {{ site.business.phone }}
+      </a>
+    </p>
+    <ul class="hero__trust">
+      <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Eco-certified resin</li>
+      <li><i class="fa-solid fa-bolt" aria-hidden="true"></i> Fast-curing, minimal disruption</li>
+      <li><i class="fa-solid fa-shield" aria-hidden="true"></i> Local. Insured. SWFL-based.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="services-grid">
+  <div class="services-grid__intro">
+    <p class="section-label">What We Do</p>
+    <h2>One technology. Two problems solved.</h2>
+    <p>
+      Polyurethane injection is the same proven process behind both our
+      seawall stabilization and concrete lifting work. If your soil is
+      moving or your slab is sinking, we have the equipment and
+      experience to fix it. We also handle metal building insulation
+      across SWFL.
+    </p>
+  </div>
+
+  <ul class="services-grid__list">
+    {% for svc in site.data.services %}
+      <li class="service-card{% if svc.featured %} service-card--featured{% endif %}">
+        <a class="service-card__link" href="{{ svc.url | relative_url }}">
+          <div class="service-card__cover" style="background-image: url('{{ svc.cover | relative_url }}');" aria-hidden="true"></div>
+          <div class="service-card__body">
+            <h3>{{ svc.title }}</h3>
+            <p>{{ svc.blurb }}</p>
+            {% if svc.bullets %}
+              <ul class="service-card__bullets">
+                {% for b in svc.bullets %}<li>{{ b }}</li>{% endfor %}
+              </ul>
+            {% endif %}
+            <p class="service-card__more">Learn more <span aria-hidden="true">→</span></p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="why">
+  <div class="why__inner">
+    <p class="section-label">Why Polyurethane?</p>
+    <h2>Lighter. Stronger. Made for the coast.</h2>
+    <div class="why__grid">
+      <div class="why__item">
+        <h3><i class="fa-solid fa-feather" aria-hidden="true"></i> Lightweight</h3>
+        <p>Won't sink into weak soil or add lateral pressure to a wall the way concrete does.</p>
+      </div>
+      <div class="why__item">
+        <h3><i class="fa-solid fa-leaf" aria-hidden="true"></i> Eco-certified</h3>
+        <p>Chemically inert after cure. Safe near marine ecosystems, recreational water, and drinking water sources.</p>
+      </div>
+      <div class="why__item">
+        <h3><i class="fa-solid fa-stopwatch" aria-hidden="true"></i> Fast-curing</h3>
+        <p>Resin sets in minutes. Most jobs are walk-on the same day with minimal site disruption.</p>
+      </div>
+      <div class="why__item">
+        <h3><i class="fa-solid fa-piggy-bank" aria-hidden="true"></i> Cost-effective</h3>
+        <p>A long-term, low-maintenance solution compared to wall replacement or repeated concrete patching.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="area-strip">
+  <div class="area-strip__inner">
+    <h2>Serving all of Southwest Florida</h2>
+    <p>{% for city in site.business.service_area %}{{ city }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+    <p class="area-strip__counties">
+      {% for county in site.business.counties %}{{ county }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+    </p>
+    <p><a class="link-arrow" href="{{ '/service-area/' | relative_url }}">See full service area →</a></p>
+  </div>
+</section>
+
+{% assign latest = site.posts | sort: "date" | reverse %}
+{% if latest.size > 0 %}
+<section class="home-blog">
+  <div class="home-blog__head">
+    <p class="section-label">From the Blog</p>
+    <h2>Field notes & project profiles</h2>
+  </div>
+  <ul class="post-cards">
+    {% for post in latest limit:3 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </ul>
+  <p class="home-blog__more"><a class="link-arrow" href="{{ '/blog/' | relative_url }}">All posts →</a></p>
+</section>
+{% endif %}
+
+{{ content }}

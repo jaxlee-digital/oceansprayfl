@@ -1,0 +1,78 @@
+title: Ocean Spray FL
+tagline: "Seawall stabilization, concrete lifting, and metal building insulation — Southwest Florida."
+description: >-
+  Ocean Spray FL stabilizes seawalls and lifts sunken concrete using
+  certified, eco-friendly polyurethane resin. Serving Bonita Springs,
+  Naples, Estero, Fort Myers, Marco Island, and the rest of SWFL.
+author: Ocean Spray FL
+email: "Adam@OceanSprayFL.com"
+
+# Business contact (used by templates)
+business:
+  name: "Ocean Spray FL"
+  phone: "(239) 444-7792"
+  phone_href: "tel:+12394447792"
+  email: "Adam@OceanSprayFL.com"
+  email_href: "mailto:Adam@OceanSprayFL.com"
+  hq: "Bonita Springs, FL"
+  service_area:
+    - Bonita Springs
+    - Naples
+    - Estero
+    - Fort Myers
+    - Marco Island
+    - Lely
+    - Everglades City
+    - Immokalee
+    - LaBelle
+    - Felda
+  counties:
+    - Collier County
+    - Lee County
+    - Hendry County
+
+social:
+  - name: Facebook
+    url: "https://www.facebook.com/oceansprayfl/"
+    icon: "fa-brands fa-facebook"
+  - name: Instagram
+    url: "https://www.instagram.com/oceansprayfl/"
+    icon: "fa-brands fa-instagram"
+
+# GitHub Pages project-page subpath. Repo expected:
+# https://github.com/jaxlee-digital/oceansprayfl
+# Live URL: https://jaxlee-digital.github.io/oceansprayfl
+# When custom domain (oceansprayfl.com) is attached, set baseurl: ""
+baseurl: "/oceansprayfl"
+url: "https://jaxlee-digital.github.io"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:slug/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+collections:
+  services:
+    output: true
+    permalink: /services/:slug/
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "services" }
+    values: { layout: "service" }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .jekyll-cache/
