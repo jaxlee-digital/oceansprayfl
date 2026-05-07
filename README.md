@@ -65,13 +65,39 @@ oceanspray-site/
         └── main.scss           # custom stylesheet (no external theme)
 ```
 
-## Local dev
+## Local preview
+
+Ruby is **not** installed on the host. Previews run in a Podman
+container:
 
 ```bash
 cd ~/.openclaw/workspace/oceanspray-site
-bundle install              # first time only
-bundle exec jekyll serve    # http://localhost:4000/oceansprayfl
+
+mkdir -p .bundle && cat > .bundle/config <<EOF
+---
+BUNDLE_PATH: "vendor/bundle"
+EOF
+
+podman run -d --name oceanspray-preview \
+  --userns=keep-id \
+  -v "$PWD":/site:Z \
+  -w /site \
+  -p 127.0.0.1:4000:4000 \
+  -e HOME=/tmp \
+  docker.io/library/ruby:3.2 \
+  sh -c "bundle install --quiet && bundle exec jekyll serve --host 0.0.0.0 --baseurl /oceansprayfl"
+
+# First run: ~60s for bundle install. Then:
+# http://localhost:4000/oceansprayfl/   (trailing slash required)
+
+# Stop / start / remove:
+podman stop oceanspray-preview
+podman start oceanspray-preview
+podman rm -f oceanspray-preview
 ```
+
+Full notes (why each flag, host-Ruby alternative, gotchas) in
+`infra/oceanspray-site/README.md`.
 
 ## Deploy
 
