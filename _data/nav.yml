@@ -4,8 +4,6 @@
   url: /services/seawall-stabilization/
 - title: Concrete Lifting
   url: /services/concrete-lifting/
-- title: Metal Building Insulation
-  url: /services/metal-building-insulation/
 - title: Service Area
   url: /service-area/
   children:
@@ -29,5 +27,3 @@
       url: /areas/lehigh-acres/
 - title: About
   url: /about/
-- title: Contact
-  url: /contact/

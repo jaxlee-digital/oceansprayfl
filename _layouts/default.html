@@ -6,15 +6,20 @@
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} - Seawall Stabilization & Concrete Lifting in SWFL{% endif %}</title>
   <style>
     /* Critical: prevent FOUC on header CTA button */
-    .site-nav__cta {
-      background: #e8a87c;
+    .site-nav__cta,
+    a.site-nav__cta,
+    a.site-nav__cta:link,
+    a.site-nav__cta:visited {
+      background-color: #e8a87c !important;
       color: #1f1a10 !important;
       padding: 0.6em 1.1em;
       border-radius: 8px;
       font-weight: 600;
       text-decoration: none;
       display: inline-block;
+      border: 0;
     }
+    a.site-nav__cta:hover { background-color: #d68a5e !important; }
   </style>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   <link rel="stylesheet"
@@ -70,7 +75,7 @@
             <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.title }}</a>
           {% endif %}
         {% endfor %}
-        <a class="site-nav__cta" href="{{ '/contact/' | relative_url }}">Get a Quote</a>
+        <a class="site-nav__cta" href="{{ '/contact/' | relative_url }}">Contact for Quote</a>
       </nav>
     </div>
 

@@ -197,14 +197,20 @@ ul, ol { margin: 0 0 1em; padding-left: 1.2em; }
 .site-nav > a.is-current,
 .site-nav__menu-btn.is-current { color: var(--c-brand); font-weight: 600; }
 
-.site-nav__cta {
-  background: var(--c-warm);
+.site-nav__cta,
+a.site-nav__cta,
+a.site-nav__cta:link,
+a.site-nav__cta:visited {
+  background-color: var(--c-warm) !important;
   color: #1f1a10 !important;
   padding: 0.6em 1.1em;
   border-radius: var(--radius);
   font-weight: 600;
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
 }
-.site-nav__cta:hover { background: var(--c-warm-ink); text-decoration: none; }
+a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-decoration: none; }
 
 .site-nav__menu { position: relative; }
 .site-nav__chevron { font-size: 0.7em; }
