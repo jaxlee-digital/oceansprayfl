@@ -186,8 +186,9 @@
       <div class="site-footer__col">
         <h3>Service Area</h3>
         <ul>
-          {% for city in site.business.service_area %}
-            <li>{{ city }}</li>
+          <li><a href="{{ '/service-area/' | relative_url }}">All markets</a></li>
+          {% for region in site.data.regions %}
+            <li><a href="{{ '/areas/' | append: region.slug | append: '/' | relative_url }}">{{ region.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
