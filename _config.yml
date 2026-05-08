@@ -63,12 +63,17 @@ collections:
   services:
     output: true
     permalink: /services/:slug/
+  areas:
+    output: true
+    permalink: /areas/:slug/
 
 defaults:
   - scope: { path: "", type: "posts" }
     values: { layout: "post" }
   - scope: { path: "", type: "services" }
     values: { layout: "service" }
+  - scope: { path: "", type: "areas" }
+    values: { layout: "region" }
 
 exclude:
   - README.md

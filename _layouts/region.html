@@ -1,0 +1,183 @@
+---
+layout: default
+---
+{% assign region = site.data.regions | where: "slug", page.region | first %}
+{% assign region_name = region.name %}
+
+{% comment %}
+  Map service slug -> the region.weight key + the region.<service>_context field.
+  We capture services with a usable (non-skip, non-empty) weight as
+  "available_services" for this region.
+{% endcomment %}
+
+<article class="region-hub" data-region="{{ region.slug }}">
+
+  <header class="sr-hero">
+    <div class="sr-container">
+      <p class="sr-eyebrow">{{ region.county }} <span class="sr-eyebrow__dot">·</span> Southwest Florida</p>
+      <h1 class="sr-hero__title">{{ region_name }}, FL: Seawall &amp; Concrete Lifting Services</h1>
+      <p class="sr-hero__lead">{{ page.lead | default: region.geographic_summary }}</p>
+      <div class="sr-actions">
+        <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Free Assessment in {{ region_name }}</a>
+        <a class="btn btn--ghost sr-actions__phone" href="{{ site.business.phone_href }}">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          {{ site.business.phone }}
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="sr-band sr-band--white">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">{{ region_name }} at a glance</p>
+      <h2 class="sr-h2">Local conditions, local fixes</h2>
+      <p>{{ region.geographic_summary }}</p>
+      {% if region.hurricane_context and region.hurricane_context != "" %}
+        <p>{{ region.hurricane_context }}</p>
+      {% endif %}
+    </div>
+  </section>
+
+  {% comment %} Service cards: per-service local context + link to service-region page {% endcomment %}
+  <section class="sr-band sr-band--cream">
+    <div class="sr-container">
+      <header class="sr-section-head">
+        <p class="sr-section-label">What we do in {{ region_name }}</p>
+        <h2 class="sr-h2">Services available in {{ region_name }}</h2>
+        <p class="sr-section-sub">Each service has a dedicated page with the diagnostic split, cost ranges, and FAQ for {{ region_name }}.</p>
+      </header>
+
+      <div class="region-services">
+        {% for service in site.data.seo_services %}
+          {% case service.slug %}
+            {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}{% assign ctx = region.seawall_context %}
+            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}{% assign ctx = region.pool_deck_context %}
+            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}{% assign ctx = region.driveway_context %}
+            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}{% assign ctx = region.warehouse_context %}
+          {% endcase %}
+          {% assign w = region.weight[weight_key] %}
+          {% if w and w != "skip" %}
+            <article class="region-service-card region-service-card--{{ w }}">
+              <header class="region-service-card__head">
+                <h3>{{ service.name }}</h3>
+                {% if w == "flagship" %}<span class="region-service-card__tag">Flagship market</span>{% endif %}
+              </header>
+              {% if ctx and ctx != "" %}
+                <p class="region-service-card__ctx">{{ ctx }}</p>
+              {% endif %}
+              <p class="region-service-card__cta">
+                <a href="{{ '/' | append: service.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">
+                  {{ service.name }} in {{ region_name }}
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </p>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% if region.neighborhoods or region.zips %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">Where in {{ region_name }}</p>
+      <h2 class="sr-h2">Neighborhoods and ZIP codes we cover</h2>
+
+      {% if region.neighborhoods %}
+        <h3 class="region-sub-h3">Neighborhoods</h3>
+        <ul class="region-chips">
+          {% for n in region.neighborhoods %}
+            <li>{{ n }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if region.zips %}
+        <h3 class="region-sub-h3">ZIP codes</h3>
+        <ul class="region-chips region-chips--mono">
+          {% for z in region.zips %}
+            <li>{{ z }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if page.local_notes %}
+  <section class="sr-band sr-band--cream">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">{{ region_name }} field notes</p>
+      <h2 class="sr-h2">What we keep seeing on jobs here</h2>
+      <div class="sr-local__body">{{ page.local_notes | markdownify }}</div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="sr-cta">
+    <div class="sr-container sr-container--prose sr-cta__inner">
+      <h2 class="sr-cta__title">Free on-site assessment in {{ region_name }}</h2>
+      <p class="sr-cta__body">We'll come out, look at the actual condition, and tell you straight whether you need restoration, replacement, or just monitoring. No pressure. No upsell.</p>
+      <div class="sr-actions sr-actions--center">
+        <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Request a Quote</a>
+        <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          {{ site.business.phone }}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-band sr-band--white">
+    <div class="sr-container">
+      <div class="sr-crosslinks">
+        <div class="sr-crosslinks__col">
+          <p class="sr-section-label">Other markets we serve</p>
+          <ul class="sr-crosslinks__list">
+            {% for r in site.data.regions %}
+              {% if r.slug != region.slug %}
+                <li><a href="{{ '/areas/' | append: r.slug | append: '/' | relative_url }}">{{ r.name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="sr-crosslinks__col">
+          <p class="sr-section-label">Browse by service</p>
+          <ul class="sr-crosslinks__list">
+            <li><a href="{{ '/services/seawall-stabilization/' | relative_url }}">Seawall Stabilization <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+            <li><a href="{{ '/services/concrete-lifting/' | relative_url }}">Concrete Lifting <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+            <li><a href="{{ '/services/metal-building-insulation/' | relative_url }}">Metal Building Insulation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+            <li><a href="{{ '/service-area/' | relative_url }}">Full service area <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ site.business.name }}",
+  "telephone": "{{ site.business.phone }}",
+  "email": "{{ site.business.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bonita Springs",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "{{ region_name }}",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "{{ region.county }}"
+    }
+  },
+  "description": {{ page.description | default: region.geographic_summary | strip_newlines | jsonify }}
+}
+</script>

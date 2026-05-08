@@ -8,6 +8,25 @@
   url: /services/metal-building-insulation/
 - title: Service Area
   url: /service-area/
+  children:
+    - title: All markets (map)
+      url: /service-area/
+    - title: Cape Coral
+      url: /areas/cape-coral/
+    - title: Naples
+      url: /areas/naples/
+    - title: Bonita Springs
+      url: /areas/bonita-springs/
+    - title: Estero
+      url: /areas/estero/
+    - title: Fort Myers
+      url: /areas/fort-myers/
+    - title: Marco Island
+      url: /areas/marco-island/
+    - title: Sanibel & Captiva
+      url: /areas/sanibel/
+    - title: Lehigh Acres
+      url: /areas/lehigh-acres/
 - title: About
   url: /about/
 - title: Contact
