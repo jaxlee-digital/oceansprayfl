@@ -1,0 +1,242 @@
+---
+layout: default
+---
+{% assign region = site.data.regions | where: "slug", page.region | first %}
+{% assign service = site.data.seo_services | where: "slug", page.service | first %}
+{% assign region_name = region.name %}
+{% assign service_name = service.name %}
+{% assign placeholder = '{region}' %}
+
+{% comment %} Pull region-specific context for this service. {% endcomment %}
+{% case page.service %}
+  {% when "seawall-stabilization" %}{% assign region_context = region.seawall_context %}
+  {% when "pool-deck-lifting" %}{% assign region_context = region.pool_deck_context %}
+  {% when "driveway-lifting" %}{% assign region_context = region.driveway_context %}
+  {% when "warehouse-slab-lifting" %}{% assign region_context = region.warehouse_context %}
+{% endcase %}
+
+<article class="service-region service-region--{{ service.variant }}">
+
+  <header class="service-region__header">
+    <p class="section-label">{{ service_name }} &middot; {{ region_name }}, FL</p>
+    <h1>{{ page.h1 }}</h1>
+    {% if page.lead %}<p class="service-region__lead">{{ page.lead }}</p>{% endif %}
+    <p class="service-region__actions">
+      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Free Assessment</a>
+      <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        {{ site.business.phone }}
+      </a>
+    </p>
+  </header>
+
+  <section class="service-region__intro">
+    <p>{{ service.intent_lead | replace: placeholder, region_name }}</p>
+    <p><strong>{{ service.core_pivot | replace: placeholder, region_name }}</strong></p>
+  </section>
+
+  {% if region_context and region_context != "" %}
+  <section class="service-region__local">
+    <h2>{{ service_name }} in {{ region_name }}: the local picture</h2>
+    <p>{{ region.geographic_summary }}</p>
+    <p>{{ region_context }}</p>
+    {% if page.service == "seawall-stabilization" and region.hurricane_context != "" %}
+      <p>{{ region.hurricane_context }}</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section class="service-region__diagnostic">
+    <h2>Replacement, or restoration?</h2>
+    <p>The honest cut: not every {{ service.short | downcase }} job in {{ region_name }} can be solved with injection. Some genuinely need replacement. Here's how we tell the difference on site.</p>
+
+    <div class="service-region__diagnostic-grid">
+      <div class="service-region__diagnostic-card service-region__diagnostic-card--replace">
+        <h3>{{ service.diagnostic_replace.title }}</h3>
+        <ul>
+          {% for item in service.diagnostic_replace.bullets %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="service-region__diagnostic-card service-region__diagnostic-card--restore">
+        <h3>{{ service.diagnostic_restore.title }}</h3>
+        <ul>
+          {% for item in service.diagnostic_restore.bullets %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-region__cost">
+    <h2>Cost comparison: replacement vs. restoration in {{ region_name }}</h2>
+    <p>Indicative ranges based on typical {{ region_name }} projects. Final pricing depends on access, linear footage or square footage, and condition. Free written quotes after the on-site assessment.</p>
+
+    <div class="service-region__cost-grid">
+      <div class="service-region__cost-card">
+        <h3>Replacement</h3>
+        <p class="service-region__cost-price">${{ service.cost_compare.replacement_low }}{% if service.cost_compare.replacement_high != service.cost_compare.replacement_low %} &ndash; ${{ service.cost_compare.replacement_high }}{% endif %} <small>per {{ service.cost_compare.unit }}</small></p>
+        <p><strong>Timeline:</strong> {{ service.cost_compare.timeline_replacement }}</p>
+        <p><strong>Disruption:</strong> {{ service.cost_compare.disruption_replacement }}</p>
+      </div>
+      <div class="service-region__cost-card service-region__cost-card--featured">
+        <h3>Restoration (polyurethane injection)</h3>
+        <p class="service-region__cost-price">${{ service.cost_compare.restoration_low }}{% if service.cost_compare.restoration_high != service.cost_compare.restoration_low %} &ndash; ${{ service.cost_compare.restoration_high }}{% endif %} <small>per {{ service.cost_compare.unit }}</small></p>
+        <p><strong>Timeline:</strong> {{ service.cost_compare.timeline_restoration }}</p>
+        <p><strong>Disruption:</strong> {{ service.cost_compare.disruption_restoration }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-region__process">
+    <h2>How we do it</h2>
+    <ol class="service-region__process-list">
+      {% for step in service.process %}
+        <li>
+          <strong>{{ step.step }}.</strong> {{ step.detail }}
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="service-region__trust">
+    <h2>Why {{ region_name }} owners choose Ocean Spray FL</h2>
+    <ul>
+      {% for signal in service.trust_signals %}
+        <li>{{ signal }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="service-region__faq">
+    <h2>Frequently asked questions</h2>
+    {% for faq in service.faq_template %}
+      <details class="service-region__faq-item">
+        <summary><strong>{{ faq.q | replace: placeholder, region_name }}</strong></summary>
+        <p>{{ faq.a | replace: placeholder, region_name }}</p>
+      </details>
+    {% endfor %}
+  </section>
+
+  {% if page.local_callout %}
+  <section class="service-region__local-callout">
+    <h2>Notes for {{ region_name }} owners</h2>
+    {{ page.local_callout | markdownify }}
+  </section>
+  {% endif %}
+
+  <section class="service-region__cta">
+    <h2>Free {{ service.short | downcase }} assessment in {{ region_name }}</h2>
+    <p>We come out, sound the {% if page.service == 'seawall-stabilization' %}wall and the soil behind it{% else %}slab and underlying fill{% endif %}, and tell you straight whether you need restoration, replacement, or just monitoring. No pressure. No upsell.</p>
+    <p class="service-region__actions">
+      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Request a Quote</a>
+      <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        {{ site.business.phone }}
+      </a>
+    </p>
+  </section>
+
+  <section class="service-region__siblings">
+    <h2>Other {{ region_name }} services</h2>
+    <ul>
+      {% for s in site.data.seo_services %}
+        {% if s.slug != page.service %}
+          {% case s.slug %}
+            {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
+            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
+            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
+            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
+          {% endcase %}
+          {% assign w = region.weight[weight_key] %}
+          {% if w != "skip" and w != nil %}
+            <li><a href="{{ '/' | append: s.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">{{ s.name }} in {{ region_name }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2>{{ service_name }} in nearby cities</h2>
+    <ul>
+      {% for r in site.data.regions %}
+        {% if r.slug != region.slug %}
+          {% case page.service %}
+            {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
+            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
+            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
+            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
+          {% endcase %}
+          {% assign w = r.weight[weight_key] %}
+          {% if w != "skip" and w != nil %}
+            <li><a href="{{ '/' | append: page.service | append: '/' | append: r.slug | append: '/' | relative_url }}">{{ service_name }} in {{ r.name }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+
+</article>
+
+{% comment %} JSON-LD structured data {% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ service_name }} in {{ region_name }}, FL",
+  "serviceType": "{{ service_name }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ site.business.name }}",
+    "telephone": "{{ site.business.phone }}",
+    "email": "{{ site.business.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bonita Springs",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      {% for r in site.data.regions %}
+      {
+        "@type": "City",
+        "name": "{{ r.name }}",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "{{ r.county }}"
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "{{ region_name }}",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "{{ region.county }}"
+    }
+  },
+  "description": {{ page.description | strip_newlines | jsonify }}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in service.faq_template %}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | replace: placeholder, region_name | strip_newlines | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | replace: placeholder, region_name | strip_newlines | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

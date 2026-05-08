@@ -1,0 +1,407 @@
+# Region data for SEO landing pages.
+# Each region has slug, name, and contextual content snippets that get
+# composed into service+region pages. Keeps the unique-content bar
+# easier to clear without writing every page from scratch.
+
+- slug: cape-coral
+  name: Cape Coral
+  county: Lee County
+  population: "approximately 220,000"
+  short: "Cape Coral"
+  geographic_summary: >-
+    Cape Coral is built on a master-planned grid of more than 400
+    miles of saltwater and freshwater canals, more navigable
+    waterways than any other city in the world. Most homes back
+    directly to a canal with a concrete seawall installed in the
+    1960s and 1970s.
+  seawall_context: >-
+    Cape Coral has more residential seawall than any other city in
+    Florida. The vast majority were built between 1962 and 1985 of
+    pre-cast concrete panels with a poured concrete cap. Sixty years
+    of tide cycle, hurricane surge, and groundwater movement have
+    pulled fill out from behind those panels. The wall itself is
+    usually still structurally sound. The soil column behind it is
+    not. That distinction is what determines whether you need
+    replacement or restoration.
+  hurricane_context: >-
+    Hurricane Ian in September 2022 accelerated soil loss behind
+    thousands of Cape Coral seawalls. Even walls that visibly
+    survived the surge are sitting on compromised fill. Voids that
+    formed during the surge can take 12-36 months to surface as
+    cap cracks, sinkholes, or settling pavers.
+  warehouse_context: >-
+    Cape Coral's commercial inventory is mostly small-bay light
+    industrial along Pine Island Road and the Veterans Memorial
+    corridor, plus a growing logistics presence near the Burnt
+    Store junction. Most slabs were poured 1985-2010 on sandy fill
+    and are showing trip-hazard settling at dock thresholds and
+    forklift lanes.
+  pool_deck_context: >-
+    Most Cape Coral pool decks were poured at the same time as the
+    home, sitting on the same fill that settles toward the canal.
+    By year 15-25, the side of the deck closest to the seawall is
+    typically 1-3 inches lower than the side against the house.
+  driveway_context: >-
+    Cape Coral driveways are almost universally poured concrete on
+    sandy fill. The high water table and seasonal swing between
+    dry-season shrinkage and wet-season swelling drives differential
+    settling, especially at the apron and at any expansion joint
+    that has lost its seal.
+  zips: ["33904", "33909", "33914", "33990", "33991", "33993"]
+  neighborhoods:
+    - "Yacht Club"
+    - "Pelican"
+    - "Cape Harbour"
+    - "Tarpon Point"
+    - "Sandoval"
+    - "Burnt Store"
+  weight:
+    seawall: flagship
+    warehouse: medium
+    pool_deck: strong
+    driveway: strong
+
+- slug: naples
+  name: Naples
+  county: Collier County
+  population: "approximately 19,000 city, 380,000 metro"
+  short: "Naples"
+  geographic_summary: >-
+    Naples sits on the Gulf of Mexico in southern Collier County,
+    bordered by Naples Bay, Gordon River, and a network of inland
+    canals through Royal Harbor, Aqualane Shores, and Port Royal.
+    Coastal homes sit on a mix of coquina, sandy fill, and reclaimed
+    bay-bottom.
+  seawall_context: >-
+    Naples seawall stock is split between older Port Royal and
+    Aqualane Shores walls (1950s-1970s, often replaced once already)
+    and newer Bay Colony, Pelican Bay, and Royal Harbor walls
+    (1980s-2000s). The failure mode is consistent: tidal exchange
+    pulls fines through joints and weep holes, voids form behind the
+    cap, and the cap eventually cracks or rotates seaward. Naples
+    Bay's tidal range is small but constant, which favors slow
+    chronic failure over dramatic post-storm collapse.
+  hurricane_context: >-
+    Hurricane Ian's storm surge pushed up the Gordon River and into
+    Naples Bay, undermining seawalls in Old Naples, Royal Harbor, and
+    along the Gulf Shore Boulevard corridor. Damage was less visible
+    than in Fort Myers Beach but persistent.
+  warehouse_context: >-
+    Naples has limited heavy industrial inventory. Most commercial
+    slab work is in the J&C Boulevard, North Naples industrial pocket,
+    and the Airport-Pulling corridor.
+  pool_deck_context: >-
+    Naples pool decks span every era and price point, from 1960s
+    Port Royal travertine over slab to 2020s tile-on-pedestal builds
+    in Pelican Bay. The common failure is differential settling at
+    the deck-to-coping joint and at the cage footings.
+  driveway_context: >-
+    Most Naples driveways are paver-set on a sand bed over a
+    concrete or stabilized base. Settling shows as bird-bathing,
+    rolling pavers, and edge-restraint failure at the apron.
+  zips: ["34102", "34103", "34104", "34105", "34108", "34109", "34110", "34112", "34119", "34120"]
+  neighborhoods:
+    - "Old Naples"
+    - "Port Royal"
+    - "Aqualane Shores"
+    - "Royal Harbor"
+    - "Pelican Bay"
+    - "Bay Colony"
+    - "Pine Ridge"
+    - "Vanderbilt Beach"
+  weight:
+    seawall: strong
+    warehouse: weak
+    pool_deck: flagship
+    driveway: strong
+
+- slug: bonita-springs
+  name: Bonita Springs
+  county: Lee County
+  population: "approximately 60,000"
+  short: "Bonita Springs"
+  geographic_summary: >-
+    Bonita Springs sits between Naples and Fort Myers, straddling
+    the Imperial River and Estero Bay back-water system. Coastal
+    seawalls line Bonita Beach and the Imperial River; inland
+    development sits on sandy Pleistocene fill.
+  seawall_context: >-
+    Bonita's seawall inventory is concentrated along the Imperial
+    River, around Hickory Bay and Big Hickory Pass, and on the
+    backside of Bonita Beach. The river walls take more freshwater
+    flow stress than typical coastal walls, which speeds up soil
+    loss through joints during heavy rain events. Bay walls behave
+    more like Estero Bay walls: chronic tidal scour.
+  hurricane_context: >-
+    Bonita took direct surge from Ian. Imperial River walls are still
+    showing post-Ian settling 18+ months later. Bonita Beach walls
+    closer to the pass took the brunt of the wave action.
+  warehouse_context: >-
+    Bonita's commercial slab stock is along Old 41 and Bonita Beach
+    Road, with newer light industrial off Bonita Grande Drive.
+  pool_deck_context: >-
+    Bonita pool decks split between older 1980s-90s Bonita Bay and
+    Pelican Landing decks (showing age) and newer Bonita National,
+    Esplanade, and Palmira builds.
+  driveway_context: >-
+    Both poured concrete and paver driveways are common. Settling
+    is most visible in older neighborhoods west of 41.
+  zips: ["34134", "34135"]
+  neighborhoods:
+    - "Bonita Beach"
+    - "Bonita Bay"
+    - "Pelican Landing"
+    - "Palmira"
+    - "Bonita National"
+    - "Imperial River"
+  weight:
+    seawall: strong
+    warehouse: medium
+    pool_deck: strong
+    driveway: strong
+
+- slug: estero
+  name: Estero
+  county: Lee County
+  population: "approximately 35,000"
+  short: "Estero"
+  geographic_summary: >-
+    Estero sits between Bonita Springs and Fort Myers, with frontage
+    on Estero Bay and the Estero River. The Coconut Point commercial
+    corridor anchors retail; residential is concentrated in
+    master-planned communities west and east of US-41.
+  seawall_context: >-
+    Estero seawall is mostly along the Estero River and back into
+    Estero Bay, with a smaller cluster on the barrier islands. The
+    bay is shallow and the river drains a large basin, so wall
+    failures here are often driven by heavy freshwater flow events
+    pulling fill through joints.
+  hurricane_context: >-
+    Estero Bay walls absorbed significant Ian surge. Inland walls
+    along the Estero River saw less wave action but heavy debris
+    impact.
+  warehouse_context: >-
+    Estero's commercial slab work is mostly retail and office
+    around Coconut Point and Miromar. Light industrial is limited
+    but growing along Three Oaks Parkway.
+  pool_deck_context: >-
+    Estero pool decks are predominantly 2000s-2010s construction
+    in Pelican Sound, West Bay Club, Grandezza, and similar
+    master-planned communities. Common failure is settling at
+    cage footings and at the lanai-to-pool-deck transition.
+  driveway_context: >-
+    Paver driveways dominate. Settling is concentrated at the
+    apron and at the garage threshold.
+  zips: ["33928", "33967", "34134", "34135"]
+  neighborhoods:
+    - "West Bay Club"
+    - "Pelican Sound"
+    - "Grandezza"
+    - "Miromar Lakes"
+    - "Estero River"
+  weight:
+    seawall: medium
+    warehouse: medium
+    pool_deck: strong
+    driveway: strong
+
+- slug: fort-myers
+  name: Fort Myers
+  county: Lee County
+  population: "approximately 95,000 city, 800,000 metro"
+  short: "Fort Myers"
+  geographic_summary: >-
+    Fort Myers is the largest city in Lee County, anchoring
+    Southwest Florida's industrial and logistics corridor. The
+    Caloosahatchee River bisects the city, with seawalled
+    waterfront from downtown through McGregor and out to the Cape
+    Coral bridge.
+  seawall_context: >-
+    Caloosahatchee River walls behave differently than canal walls:
+    bigger water body, larger wave fetch, more boat-wake fatigue, and
+    a daily freshwater-saltwater interface that accelerates soil
+    chemistry changes behind the wall. McGregor Boulevard waterfront
+    walls and downtown river walls are the highest-value, oldest
+    inventory. Newer walls along the south bank and into Iona/
+    St. James City show more typical coastal failure modes.
+  hurricane_context: >-
+    Fort Myers Beach took the worst of Hurricane Ian's surge in 2022.
+    Mainland Fort Myers walls along the river were protected from
+    direct surge by the island and the river bend, but inland flooding
+    soaked fill behind walls and is still producing delayed settlement.
+  warehouse_context: >-
+    Fort Myers anchors the Southwest Florida industrial corridor.
+    The Metro Parkway, Hanson Street, Daniels Parkway, and Alico
+    Road areas hold the largest concentration of warehouse,
+    distribution, light manufacturing, and dock-equipped commercial
+    space in the region. Most slabs date to the 1985-2015 build-out
+    on sandy fill, with classic settlement at dock thresholds, around
+    column footings, and along forklift lanes.
+  pool_deck_context: >-
+    Fort Myers pool decks span every era, from 1950s McGregor estates
+    to 2020s Gateway and Verandah builds. The McGregor and Whiskey
+    Creek pool decks are the most common settlement candidates.
+  driveway_context: >-
+    Both poured concrete and pavers are common. Older driveways in
+    McGregor, Edison Park, and Dean Park show classic differential
+    settlement at the apron and along expansion joints.
+  zips: ["33901", "33903", "33905", "33907", "33908", "33912", "33913", "33916", "33919", "33966"]
+  neighborhoods:
+    - "Downtown River District"
+    - "McGregor"
+    - "Edison Park"
+    - "Whiskey Creek"
+    - "Gateway"
+    - "Iona"
+    - "Fort Myers Shores"
+  weight:
+    seawall: strong
+    warehouse: flagship
+    pool_deck: strong
+    driveway: strong
+
+- slug: marco-island
+  name: Marco Island
+  county: Collier County
+  population: "approximately 16,000"
+  short: "Marco Island"
+  geographic_summary: >-
+    Marco Island is a barrier island at the northern edge of the Ten
+    Thousand Islands, connected to the mainland by the Jolley Bridge.
+    The interior is built on a network of dredged canals lined with
+    seawalls; the Gulf side runs uninterrupted beach.
+  seawall_context: >-
+    Marco's canal seawalls share a similar story to Cape Coral, with
+    one important difference: tidal exchange is bigger, exposed fetch
+    in the wider canals is longer, and the island is more exposed to
+    Gulf weather. Walls here see more daily mechanical work than Cape
+    Coral walls, which compresses the failure timeline. Most Marco
+    canal walls were installed 1965-1990 and a meaningful share have
+    already been replaced once.
+  hurricane_context: >-
+    Marco took a direct hit from Ian's eyewall. Many seawalls survived
+    the wave action but lost significant fill behind them. Owners who
+    saw no visible cap damage are now seeing sinkholes and pavers
+    settling 18-30 months later.
+  warehouse_context: >-
+    Marco Island doesn't have traditional industrial warehousing,
+    but it has a meaningful concentration of dry-stack marina,
+    boat club, and yacht-handling storage facilities. These are
+    purpose-built warehouses with very different slab loading
+    profiles than a typical distribution center: heavy yacht
+    handlers (some 60,000+ lb capacity), concentrated point
+    loading from rack-mounted vessels, and narrow drive aisles
+    that can't tolerate slab unevenness. Settled slabs in a dry
+    stack put the vessels themselves at risk.
+  pool_deck_context: >-
+    Marco pool decks are predominantly 1970s-2000s construction with
+    a high concentration of waterfront cage-and-deck assemblies.
+    Settling near the seawall side of the deck is the most common
+    complaint.
+  driveway_context: >-
+    Both pavers and stamped concrete are common. Salt exposure and
+    high water table accelerate apron settlement.
+  zips: ["34145"]
+  neighborhoods:
+    - "Tigertail"
+    - "Hideaway Beach"
+    - "Old Marco"
+    - "South Beach"
+    - "Estates"
+  weight:
+    seawall: strong
+    warehouse: medium
+    pool_deck: strong
+    driveway: strong
+
+- slug: sanibel
+  name: Sanibel
+  county: Lee County
+  population: "approximately 7,500"
+  short: "Sanibel"
+  geographic_summary: >-
+    Sanibel is a barrier island west of Fort Myers, connected by the
+    Sanibel Causeway. The island's character is set by strict
+    conservation zoning and the unique east-west orientation that
+    catches Gulf shells and storm energy from the south and west.
+  seawall_context: >-
+    Sanibel seawall inventory is smaller than Cape Coral or Marco
+    but disproportionately important. Walls protect bay-side homes
+    along the back of the island and on Captiva. Sanibel's
+    permitting environment for any marine work is strict, which
+    raises the value of restoration over replacement: a poly
+    injection job typically falls below the threshold that would
+    trigger a full marine permit and review.
+  hurricane_context: >-
+    Sanibel took a direct hit from Ian. Many bay-side seawalls
+    survived structurally but lost significant fill. Some genuinely
+    do need replacement; many more can be restored with poly
+    injection if assessed honestly. We tell owners both stories.
+  warehouse_context: >-
+    Sanibel and Captiva don't have traditional industrial
+    warehousing, but they have working marina and boat-storage
+    facilities, much of it rebuilt or in active reconstruction
+    after Hurricane Ian. New slabs poured on disturbed post-Ian
+    fill are showing early settlement; older slabs that survived
+    the storm are sitting on subgrades that took heavy
+    saltwater intrusion.
+  pool_deck_context: >-
+    Sanibel pool decks are mostly 1980s-2010s construction. Post-Ian
+    settling and salt exposure are the dominant failure drivers.
+  driveway_context: >-
+    Sanibel driveway stock is mostly shell, paver, and stamped
+    concrete on a high-water-table sandy substrate.
+  zips: ["33957"]
+  neighborhoods:
+    - "East End"
+    - "Mid-Island"
+    - "West End"
+    - "Captiva"
+  weight:
+    seawall: strong
+    warehouse: medium
+    pool_deck: medium
+    driveway: medium
+
+- slug: lehigh-acres
+  name: Lehigh Acres
+  county: Lee County
+  population: "approximately 130,000"
+  short: "Lehigh Acres"
+  geographic_summary: >-
+    Lehigh Acres is a large unincorporated community east of Fort
+    Myers, originally platted as a mid-century retirement
+    development. It's predominantly inland, with no coastal
+    frontage. Growth has shifted Lehigh into a logistics and light
+    industrial corridor for the broader Lee County market.
+  seawall_context: ""
+  hurricane_context: >-
+    Lehigh sits inland enough to avoid surge, but Ian's freshwater
+    flooding stressed slab-on-grade construction across the area.
+    Foundation settlement complaints have ticked up since.
+  warehouse_context: >-
+    Lehigh Acres is one of the fastest-growing warehouse and light
+    industrial markets in Southwest Florida, anchored by the
+    Sunshine Boulevard, Lee Boulevard, and SR-82 corridors. Newer
+    tilt-up construction sits next to 1990s-2000s metal building
+    inventory, much of it on poorly compacted sandy fill. Slab
+    settlement around dock thresholds, forklift lanes, and column
+    footings is the most common service call.
+  pool_deck_context: >-
+    Lehigh's pool deck inventory is predominantly 1990s-2010s
+    suburban builds. Settlement is driven by the high water table
+    and seasonal soil moisture swing.
+  driveway_context: >-
+    Most Lehigh driveways are poured concrete on sandy fill.
+    Differential settlement at the apron and along expansion
+    joints is common in the older 1970s-1990s sections.
+  zips: ["33936", "33971", "33972", "33973", "33974", "33976"]
+  neighborhoods:
+    - "Sunshine Boulevard"
+    - "Lee Boulevard corridor"
+    - "Olga"
+  weight:
+    seawall: skip
+    warehouse: flagship
+    pool_deck: medium
+    driveway: strong

@@ -1,0 +1,437 @@
+# Service definitions for SEO landing pages.
+# Used by region+service templates. Each service has shared
+# content blocks; region-specific copy lives in regions.yml.
+
+- slug: seawall-stabilization
+  name: Seawall Stabilization
+  short: "Seawall stabilization"
+  variant: residential
+  primary_keyword_pattern: "seawall replacement {region}"
+  secondary_keywords:
+    - "seawall repair {region}"
+    - "seawall contractor {region}"
+    - "seawall restoration {region}"
+    - "failing seawall {region}"
+    - "seawall sinking {region}"
+    - "sinkhole near seawall {region}"
+    - "polyurethane seawall repair {region}"
+    - "seawall cost {region}"
+  hero_question_pattern: "Seawall Replacement in {region}, FL — Or Restoration?"
+  meta_title_pattern: "Seawall Replacement in {region}, FL: Or Is Restoration the Smarter Call? | Ocean Spray FL"
+  meta_description_pattern: >-
+    Most failing seawalls in {region} don't need full replacement.
+    Polyurethane stabilization fixes the soil failure behind the
+    wall at about half the cost. Free assessments. Ocean Spray FL.
+  intent_lead: >-
+    If you searched for seawall replacement, you already know your
+    wall is in trouble. The question worth asking before you call
+    a marine contractor is whether the wall itself is failing,
+    or the soil behind it.
+  core_pivot: >-
+    In Southwest Florida we see roughly 7 out of 10 failing
+    seawalls where the concrete panels are still structurally
+    intact. The fill behind the wall has eroded out from tidal
+    exchange, weep hole flow, and storm surge. The cap cracks,
+    pavers settle, sinkholes appear at the lawn, and from the
+    surface it looks like the wall is failing. The real failure
+    is underground. Stabilizing the soil with polyurethane
+    injection solves it without touching the wall.
+  diagnostic_replace:
+    title: "When replacement is the right call"
+    bullets:
+      - "Wall is leaning seaward more than a few degrees off vertical"
+      - "Multiple panels have separated at the joints"
+      - "Cap is structurally fractured, not just hairline cracked"
+      - "Rebar is exposed and corroded through"
+      - "Wall has rotated or shifted at the toe"
+      - "Original construction predates 1970 and the panels are end-of-life"
+  diagnostic_restore:
+    title: "When restoration solves the problem"
+    bullets:
+      - "Sinkholes or depressions appearing at the lawn behind the cap"
+      - "Pavers, pool deck, or landscape settling toward the water"
+      - "Soil washing out through weep holes or wall joints"
+      - "Hairline cracking along the cap"
+      - "Voids audible when you tap the cap with a steel rod"
+      - "Wall is plumb but the ground behind it is dropping"
+  cost_compare:
+    replacement_low: 700
+    replacement_high: 1800
+    restoration_low: 200
+    restoration_high: 600
+    unit: "linear foot"
+    timeline_replacement: "2-6 weeks per property, plus permitting"
+    timeline_restoration: "1-2 days per property, no marine permit typically required"
+    disruption_replacement: "demolition, barge or land-side excavator, removal of pool fence and landscaping"
+    disruption_restoration: "truck and small rig in the driveway, no demolition, lawn intact"
+  faq_template:
+    - q: "How do I know if my seawall in {region} actually needs replacement?"
+      a: >-
+        We run a free on-site assessment. We sound the cap, look at
+        the wall plumb, check the joints, and measure soil voids
+        behind the cap with a probe. Most {region} owners who think
+        they need replacement need restoration. We tell you straight
+        either way: if you actually need replacement, we say so and
+        refer you to a marine contractor we trust.
+    - q: "Is polyurethane seawall stabilization permanent?"
+      a: >-
+        The cured resin is chemically inert and structurally stable
+        for 50+ years in lab testing. Real-world coastal performance
+        in Southwest Florida is consistent with that. The resin
+        bonds with the surrounding soil into a solid mass that
+        doesn't break down with tide cycles or storm surge.
+    - q: "Will I need a marine permit?"
+      a: >-
+        Almost never. Stabilization is land-side soil work behind
+        the wall. We're not entering the water and we're not
+        modifying the wall structure, which means we usually fall
+        below the threshold that triggers a full marine permit.
+        Replacement, by contrast, almost always requires permitting
+        and review.
+    - q: "Does insurance cover this?"
+      a: >-
+        Sometimes. Hurricane-related soil loss is occasionally
+        covered under flood policies. Long-term tidal erosion
+        usually is not. We'll work with your adjuster on
+        documentation if there's a covered event in play.
+    - q: "How long does a typical {region} seawall job take?"
+      a: >-
+        Most residential projects are completed in 1-2 days. We
+        arrive with a truck-mounted rig, drill small injection
+        ports through the cap, inject the resin in stages, and
+        leave. Cure is rapid. You're back to using the property
+        the same day.
+  process:
+    - step: "Free on-site assessment"
+      detail: "We measure the wall, sound for voids, and tell you straight whether you need restoration or replacement."
+    - step: "Engineered injection plan"
+      detail: "We map the void pattern and pre-plan injection port spacing and resin volume per linear foot."
+    - step: "Day-of injection"
+      detail: "Small ports drilled through the cap, resin injected in stages, expansion fills voids and binds soil."
+    - step: "Verification and cleanup"
+      detail: "We re-sound the cap, confirm no remaining voids, patch the ports flush, and leave the property clean."
+  trust_signals:
+    - "Certified eco-friendly polyurethane resin, safe for marine ecosystems"
+    - "Family-owned, Bonita Springs based, fully insured"
+    - "Free assessments across Southwest Florida"
+    - "Honest diagnosis: if you need replacement, we tell you"
+
+- slug: pool-deck-lifting
+  name: Pool Deck Lifting
+  short: "Pool deck lifting"
+  variant: residential
+  primary_keyword_pattern: "pool deck lifting {region}"
+  secondary_keywords:
+    - "pool deck repair {region}"
+    - "sunken pool deck {region}"
+    - "pool deck leveling {region}"
+    - "pool deck sinking {region}"
+    - "concrete pool deck repair {region}"
+    - "uneven pool deck {region}"
+    - "polyjacking pool deck {region}"
+    - "mudjacking pool deck {region}"
+  hero_question_pattern: "Pool Deck Lifting in {region}, FL"
+  meta_title_pattern: "Pool Deck Lifting & Leveling in {region}, FL | Ocean Spray FL"
+  meta_description_pattern: >-
+    Sunken pool deck in {region}? We lift and level concrete pool
+    decks with polyurethane injection in a single visit. No demo,
+    no concrete pour, walk on it the same day. Free quote.
+  intent_lead: >-
+    A sinking pool deck in {region} is rarely a deck problem. It's
+    a soil problem. The slab itself is almost always reusable. The
+    fill underneath has compressed, washed out, or settled, and
+    the deck has followed it down.
+  core_pivot: >-
+    Polyurethane injection lifts the deck back to grade by
+    expanding under the slab and filling the void that caused the
+    settling. No demolition, no replacement pour, no waiting on
+    concrete to cure. Most {region} pool decks are level again the
+    same day, and you can walk on it before we leave.
+  diagnostic_replace:
+    title: "When replacement is the right call"
+    bullets:
+      - "Slab is structurally cracked through, not just surface hairline"
+      - "Surface finish has degraded beyond cosmetic repair"
+      - "Slab is too thin or unreinforced for safe lifting"
+      - "Owner wants a different look or material entirely"
+  diagnostic_restore:
+    title: "When lifting solves the problem"
+    bullets:
+      - "Deck has settled toward the seawall, the cage, or the lanai"
+      - "Trip hazards at the coping joint or expansion joints"
+      - "Cage footings have dropped and the screen is binding"
+      - "Pool coping has separated from the deck"
+      - "Standing water in spots that used to drain"
+      - "Slab is intact but no longer level"
+  cost_compare:
+    replacement_low: 8000
+    replacement_high: 25000
+    restoration_low: 1200
+    restoration_high: 4500
+    unit: "typical pool deck"
+    timeline_replacement: "2-4 weeks plus removal of cage, coping, and equipment"
+    timeline_restoration: "half a day to a full day, walk on it the same day"
+    disruption_replacement: "demolition, debris haul, full re-pour, refinish, pool covered the entire time"
+    disruption_restoration: "small ports drilled through the deck and patched flush, no demo, no debris"
+  faq_template:
+    - q: "How long does pool deck lifting take in {region}?"
+      a: >-
+        Most {region} pool decks are completed in half a day to a
+        full day. We arrive with a truck-mounted rig, drill small
+        injection ports through the slab, inject the resin in
+        stages, lift the deck back to level, and leave. You walk
+        on it before we drive away.
+    - q: "Will the injection ports be visible?"
+      a: >-
+        We patch the ports flush with the slab using a color-matched
+        compound. On textured or stamped surfaces, the patches
+        disappear. On a plain broom-finish, they're visible up close
+        but blend into the panel within weeks of weathering.
+    - q: "Will the deck settle again?"
+      a: >-
+        The cured resin is chemically inert and won't break down,
+        compress, or wash out. As long as we've identified and
+        filled the original void, the deck stays level. If the
+        underlying cause is ongoing seawall failure pulling fill
+        toward the canal, we tell you that during the assessment
+        and recommend pairing the deck lift with seawall
+        stabilization.
+    - q: "Is this the same as mudjacking?"
+      a: >-
+        No. Mudjacking pumps a heavy cement slurry under the slab
+        to lift it. The slurry adds significant weight, can
+        re-settle as the soil shifts, and washes out over time.
+        Polyurethane is lighter than the slab itself, doesn't add
+        ground stress, and doesn't wash out. It's the modern
+        replacement for mudjacking.
+    - q: "Can you lift a deck that's near a seawall?"
+      a: >-
+        Yes. We do it constantly in {region}. If the deck has
+        settled because the seawall is losing fill, we'll usually
+        recommend stabilizing the seawall first or in the same
+        visit. Lifting a deck on top of a still-failing soil
+        column is a temporary fix.
+  process:
+    - step: "Free on-site assessment"
+      detail: "We measure deflection, identify the underlying cause, and quote per-square-foot or per-section."
+    - step: "Engineered lift plan"
+      detail: "We mark injection points, calculate resin volume, and identify the lift sequence to bring the deck back to level."
+    - step: "Day-of injection"
+      detail: "Small ports drilled through the slab, resin injected in stages, deck rises back to grade in real time."
+    - step: "Patch and clean"
+      detail: "Ports patched flush with color-matched compound, area cleaned, deck ready to use immediately."
+  trust_signals:
+    - "Certified, eco-friendly polyurethane resin, pool-safe"
+    - "Same-day completion on most jobs"
+    - "Family-owned, Bonita Springs based, fully insured"
+    - "Free assessments across Southwest Florida"
+
+- slug: driveway-lifting
+  name: Driveway Lifting
+  short: "Driveway lifting"
+  variant: residential
+  primary_keyword_pattern: "driveway lifting {region}"
+  secondary_keywords:
+    - "driveway leveling {region}"
+    - "sunken driveway {region}"
+    - "driveway repair {region}"
+    - "concrete driveway lifting {region}"
+    - "driveway sinking {region}"
+    - "uneven driveway {region}"
+    - "polyjacking driveway {region}"
+    - "mudjacking driveway {region}"
+  hero_question_pattern: "Driveway Lifting in {region}, FL"
+  meta_title_pattern: "Driveway Lifting & Leveling in {region}, FL | Ocean Spray FL"
+  meta_description_pattern: >-
+    Sunken driveway in {region}? Polyurethane injection lifts and
+    levels concrete driveways in a single visit. No demolition,
+    drive on it the same day. Free assessment.
+  intent_lead: >-
+    A {region} driveway that's sinking, cracking at the apron, or
+    pooling water at the garage threshold almost never needs
+    replacement. The slab is fine. The fill underneath has
+    compressed.
+  core_pivot: >-
+    Polyurethane injection lifts the driveway back to grade by
+    expanding under the slab and filling the void that caused the
+    settling. No demo, no concrete pour, no waiting. You drive on
+    it the same day.
+  diagnostic_replace:
+    title: "When replacement is the right call"
+    bullets:
+      - "Slab is structurally cracked into multiple pieces"
+      - "Surface scaling and spalling beyond cosmetic repair"
+      - "Slab is too thin or unreinforced for safe lifting"
+      - "Owner wants a different material (e.g., switch to pavers)"
+  diagnostic_restore:
+    title: "When lifting solves the problem"
+    bullets:
+      - "Apron has dropped at the street or at the garage threshold"
+      - "Standing water at the garage door or at the apron"
+      - "Trip hazards at expansion joints"
+      - "Differential settlement between adjacent panels"
+      - "Slab is intact but no longer flat or sloped correctly"
+  cost_compare:
+    replacement_low: 6000
+    replacement_high: 18000
+    restoration_low: 800
+    restoration_high: 3500
+    unit: "typical residential driveway"
+    timeline_replacement: "1-3 weeks plus saw-cut demolition and re-pour"
+    timeline_restoration: "2-6 hours, drive on it the same day"
+    disruption_replacement: "demolition, debris haul, full re-pour, no driveway access for the cure window"
+    disruption_restoration: "small ports drilled and patched flush, no demolition, no debris"
+  faq_template:
+    - q: "How long does driveway lifting take in {region}?"
+      a: >-
+        Most {region} driveways are completed in 2-6 hours. Small
+        injection ports are drilled through the slab, resin is
+        injected in stages, and the slab rises back to grade in
+        real time. You drive on it before we leave.
+    - q: "Will I see the injection ports afterward?"
+      a: >-
+        We patch the ports flush with a color-matched compound. On
+        a typical broom-finish driveway, the patches blend into the
+        panel within weeks. On exposed aggregate or stamped
+        finishes we color-match more aggressively.
+    - q: "Will it settle again?"
+      a: >-
+        The cured resin doesn't compress or wash out. As long as
+        we've identified and filled the underlying void, the slab
+        stays level. We assess the cause during the quote: if it's
+        a one-time fill compaction issue, the lift is permanent.
+        If it's ongoing erosion, we address that too.
+    - q: "How is this different from mudjacking?"
+      a: >-
+        Mudjacking pumps a heavy cement slurry under the slab.
+        Polyurethane is lighter than the slab itself, sets in
+        minutes, and doesn't wash out or re-settle. Mudjacking is
+        a 1980s technology; polyurethane has replaced it in nearly
+        every modern slab-lifting job.
+    - q: "Can you lift a paver driveway?"
+      a: >-
+        Pavers themselves can be lifted by re-bedding the sand
+        course, but if the underlying base or subgrade has settled,
+        polyurethane injection under the base course is the
+        durable fix.
+  process:
+    - step: "Free on-site assessment"
+      detail: "We measure deflection, identify the underlying cause, and provide a written quote."
+    - step: "Engineered lift plan"
+      detail: "We mark injection points and calculate resin volume per panel."
+    - step: "Day-of injection"
+      detail: "Small ports drilled, resin injected in stages, slab rises back to level in real time."
+    - step: "Patch and clean"
+      detail: "Ports patched flush, area cleaned, drive on it immediately."
+  trust_signals:
+    - "Certified, eco-friendly polyurethane resin"
+    - "Same-day completion on most residential jobs"
+    - "Family-owned, Bonita Springs based, fully insured"
+    - "Free assessments across Southwest Florida"
+
+- slug: warehouse-slab-lifting
+  name: Warehouse & Commercial Slab Lifting
+  short: "Warehouse slab lifting"
+  variant: commercial
+  primary_keyword_pattern: "warehouse slab lifting {region}"
+  secondary_keywords:
+    - "commercial concrete lifting {region}"
+    - "warehouse floor leveling {region}"
+    - "industrial slab repair {region}"
+    - "dock leveler concrete repair {region}"
+    - "forklift trip hazard repair {region}"
+    - "concrete floor settlement {region}"
+    - "polyurethane slab lifting {region}"
+    - "warehouse floor repair {region}"
+  hero_question_pattern: "Warehouse & Commercial Slab Lifting in {region}, FL"
+  meta_title_pattern: "Warehouse & Commercial Slab Lifting in {region}, FL | Ocean Spray FL"
+  meta_description_pattern: >-
+    Settled warehouse floors in {region}? Polyurethane injection
+    lifts industrial slabs without shutting down operations. No
+    demolition, drive forklifts on it the same day. Free site survey.
+  intent_lead: >-
+    Settled slabs in a working facility cost money two ways: the
+    repair, and the downtime. Most facility managers in {region}
+    quote out a tear-out and re-pour and immediately stall on the
+    operations math: a week of forklift lanes out of service, a
+    dock door offline, racking pulled and reset.
+  core_pivot: >-
+    Polyurethane injection lifts industrial slabs back to grade
+    without demolition, without a re-pour, and without shutting
+    down the lane. We work in zones around your operation: drill
+    small ports, inject resin in stages, lift the slab in real
+    time, patch the ports, hand the lane back. Forklifts roll on
+    it the same shift.
+  diagnostic_replace:
+    title: "When replacement is the right call"
+    bullets:
+      - "Slab is fully fractured into multiple pieces"
+      - "Slab thickness or reinforcement is inadequate for the load class"
+      - "Subgrade has lost integrity beyond what injection can stabilize"
+      - "Facility is being repurposed and the new use requires different specs"
+  diagnostic_restore:
+    title: "When lifting solves the problem"
+    bullets:
+      - "Settlement at dock thresholds creating trailer-to-floor mismatch"
+      - "Forklift lanes out of plane causing damage to load and equipment"
+      - "Trip hazards at expansion joints (OSHA exposure)"
+      - "Settling around column footings without structural cracking"
+      - "Dock leveler pit out of square"
+      - "Slab is intact but the subgrade has settled"
+  cost_compare:
+    replacement_low: 12
+    replacement_high: 25
+    restoration_low: 4
+    restoration_high: 10
+    unit: "square foot of affected area"
+    timeline_replacement: "1-3 weeks per zone, lane fully offline"
+    timeline_restoration: "hours per zone, lane back in service same shift"
+    disruption_replacement: "saw-cut, demolition, debris haul, re-pour, cure window before re-loading"
+    disruption_restoration: "small injection ports drilled and patched flush, no demolition, racking can stay in place"
+  faq_template:
+    - q: "Can you work without shutting down our {region} facility?"
+      a: >-
+        That's the entire point of polyurethane injection in a
+        working facility. We zone the work, scheduling around your
+        operation. A typical {region} project closes a single
+        forklift lane or a single dock for the duration of the
+        injection (usually a few hours), then hands it back. The
+        rest of the facility runs normally.
+    - q: "What's the load capacity of the cured resin?"
+      a: >-
+        The high-density structural resins we use for warehouse work
+        carry compressive strength ratings supporting 6,000+ psf
+        once cured. That's well above standard warehouse floor
+        load class requirements. We'll match the resin spec to
+        your floor's design load before we inject.
+    - q: "Will the patched injection ports affect forklift traffic?"
+      a: >-
+        No. Ports are 5/8-inch holes drilled through the slab and
+        patched flush with a structural compound. The patched
+        surface meets or exceeds the surrounding slab's wear and
+        load characteristics.
+    - q: "Do you carry insurance and bonding for commercial work?"
+      a: >-
+        Yes. Full general liability, workers compensation, and
+        bondable for {region} facility work. We provide insurance
+        certificates and bonding documentation up front.
+    - q: "How fast can you mobilize for an OSHA-flagged trip hazard?"
+      a: >-
+        For active trip hazard exposure we mobilize within 48-72
+        hours in {region}. Most trip hazards are corrected within
+        the same site visit. We can provide written documentation
+        of the correction for your safety records.
+  process:
+    - step: "Free site survey and load assessment"
+      detail: "We measure deflection, review your floor design load class, and scope the affected zones."
+    - step: "Operations-aware schedule"
+      detail: "We sequence the work around your shift schedule, dock activity, and forklift traffic plan."
+    - step: "Zoned injection"
+      detail: "Small ports drilled, structural resin injected in stages, slab lifted to grade per zone."
+    - step: "Patch, verify, return to service"
+      detail: "Ports patched flush, lift verified to spec, lane back in service same shift."
+  trust_signals:
+    - "Bondable, fully insured, and OSHA-aware"
+    - "Structural-grade resins rated for industrial floor loads"
+    - "Operations-aware scheduling, lane-by-lane execution"
+    - "Free site surveys across Southwest Florida"
