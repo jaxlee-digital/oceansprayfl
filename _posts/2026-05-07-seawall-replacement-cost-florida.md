@@ -1,5 +1,5 @@
 ---
-title: "Most Florida seawalls don't need replacing — foam injection saves homeowners thousands"
+title: "Most Florida seawalls don't need replacing: foam injection saves homeowners thousands"
 date: 2026-05-07
 author: Ocean Spray FL
 tags: [seawall, cost, foam-injection, swfl]
@@ -7,7 +7,7 @@ excerpt: >-
   Most failing seawalls in Southwest Florida don't need to be torn
   out and rebuilt. Polyurethane foam injection stabilizes the soil
   behind the wall, fixes the actual problem, and runs about half the
-  cost of full replacement — saving most homeowners thousands.
+  cost of full replacement, saving most homeowners thousands.
 ---
 
 When a homeowner sees soil sinking behind their seawall, the first
