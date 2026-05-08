@@ -1,20 +1,13 @@
 - title: Home
   url: /
-- title: Services
-  url: /services/
-  children:
-    - title: All services
-      url: /services/
-    - title: Seawall stabilization
-      url: /services/seawall-stabilization/
-    - title: Concrete lifting
-      url: /services/concrete-lifting/
-    - title: Metal building insulation
-      url: /services/metal-building-insulation/
+- title: Seawall Stabilization
+  url: /services/seawall-stabilization/
+- title: Concrete Lifting
+  url: /services/concrete-lifting/
+- title: Metal Building Insulation
+  url: /services/metal-building-insulation/
 - title: Service Area
   url: /service-area/
-- title: Blog
-  url: /blog/
 - title: About
   url: /about/
 - title: Contact
