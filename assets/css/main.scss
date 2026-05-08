@@ -535,6 +535,18 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
   font-size: 0.85rem;
   color: #91a3b6;
 }
+.site-footer__legal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+.site-footer__legal a { color: #b9c6d4; }
+.site-footer__legal a:hover { color: var(--c-accent); }
+
 .social-links {
   list-style: none;
   padding: 0;
