@@ -546,17 +546,33 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 
 /* ----- Page / Post / Service ----- */
 .page,
-.post,
-.service {
+.post {
   max-width: var(--max-prose);
   margin: 0 auto;
   padding: 4rem 1.25rem;
 }
+/* Service pages span the full page width to fit the two-column
+   deep-dive layout. Single-column prose inside is capped below. */
+.service {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+}
+.service__header,
+.service__summary,
+.service__cover,
+.service__hero,
+.service__actions,
+.service__body > :not(.service-cols) {
+  max-width: var(--max-prose);
+  margin-left: auto;
+  margin-right: auto;
+}
 .page__header,
 .post__header,
 .service__header { margin-bottom: 2rem; }
-.post__cover,
-.service__cover { margin: 1.5rem 0; }
+.post__cover { margin: 1.5rem 0; }
+.service__cover { margin: 1.5rem auto; }
 .post__cover img,
 .service__cover img { border-radius: var(--radius-lg); }
 @media (max-width: 600px) {
@@ -568,7 +584,7 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 }
 
 .service__hero {
-  margin: 1.5rem 0 2rem;
+  margin: 1.5rem auto 2rem;
 }
 .service__hero img {
   width: 100%;
@@ -584,7 +600,7 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 .service__summary { font-size: 1.15rem; color: var(--c-ink-soft); margin: 0; }
 .post__meta { color: var(--c-muted); font-size: 0.9rem; }
 .post__sep { margin: 0 0.5em; }
-.service__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.25rem 0 0; }
+.service__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.25rem auto 0; }
 
 .post__body :is(h2, h3, h4) { margin-top: 1.6em; }
 .post__body img { border-radius: var(--radius); margin: 1rem 0; }
