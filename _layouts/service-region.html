@@ -7,7 +7,6 @@ layout: default
 {% assign service_name = service.name %}
 {% assign placeholder = '{region}' %}
 
-{% comment %} Pull region-specific context for this service. {% endcomment %}
 {% case page.service %}
   {% when "seawall-stabilization" %}{% assign region_context = region.seawall_context %}
   {% when "pool-deck-lifting" %}{% assign region_context = region.pool_deck_context %}
@@ -15,171 +14,241 @@ layout: default
   {% when "warehouse-slab-lifting" %}{% assign region_context = region.warehouse_context %}
 {% endcase %}
 
-<article class="service-region service-region--{{ service.variant }}">
+<article class="sr sr--{{ service.variant }}" data-service="{{ service.slug }}">
 
-  <header class="service-region__header">
-    <p class="section-label">{{ service_name }} &middot; {{ region_name }}, FL</p>
-    <h1>{{ page.h1 }}</h1>
-    {% if page.lead %}<p class="service-region__lead">{{ page.lead }}</p>{% endif %}
-    <p class="service-region__actions">
-      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Free Assessment</a>
-      <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
-        <i class="fa-solid fa-phone" aria-hidden="true"></i>
-        {{ site.business.phone }}
-      </a>
-    </p>
+  {% comment %} Hero band {% endcomment %}
+  <header class="sr-hero">
+    <div class="sr-container">
+      <p class="sr-eyebrow">{{ service_name }} <span class="sr-eyebrow__dot">·</span> {{ region_name }}, FL</p>
+      <h1 class="sr-hero__title">{{ page.h1 }}</h1>
+      {% if page.lead %}<p class="sr-hero__lead">{{ page.lead }}</p>{% endif %}
+      <div class="sr-actions">
+        <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Free Assessment</a>
+        <a class="btn btn--ghost sr-actions__phone" href="{{ site.business.phone_href }}">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          {{ site.business.phone }}
+        </a>
+      </div>
+    </div>
   </header>
 
-  <section class="service-region__intro">
-    <p>{{ service.intent_lead | replace: placeholder, region_name }}</p>
-    <p><strong>{{ service.core_pivot | replace: placeholder, region_name }}</strong></p>
+  {% comment %} Intent + pivot, white band, prose-width {% endcomment %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-intro">{{ service.intent_lead | replace: placeholder, region_name }}</p>
+      <p class="sr-pivot"><strong>{{ service.core_pivot | replace: placeholder, region_name }}</strong></p>
+    </div>
   </section>
 
   {% if region_context and region_context != "" %}
-  <section class="service-region__local">
-    <h2>{{ service_name }} in {{ region_name }}: the local picture</h2>
-    <p>{{ region.geographic_summary }}</p>
-    <p>{{ region_context }}</p>
-    {% if page.service == "seawall-stabilization" and region.hurricane_context != "" %}
-      <p>{{ region.hurricane_context }}</p>
-    {% endif %}
+  {% comment %} Local picture, cream band {% endcomment %}
+  <section class="sr-band sr-band--cream">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">{{ region_name }}, FL</p>
+      <h2 class="sr-h2">{{ service_name }} in {{ region_name }}: the local picture</h2>
+      <p>{{ region.geographic_summary }}</p>
+      <p>{{ region_context }}</p>
+      {% if page.service == "seawall-stabilization" and region.hurricane_context != "" %}
+        <p>{{ region.hurricane_context }}</p>
+      {% endif %}
+    </div>
   </section>
   {% endif %}
 
-  <section class="service-region__diagnostic">
-    <h2>Replacement, or restoration?</h2>
-    <p>The honest cut: not every {{ service.short | downcase }} job in {{ region_name }} can be solved with injection. Some genuinely need replacement. Here's how we tell the difference on site.</p>
+  {% comment %} Diagnostic split cards, white band {% endcomment %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container">
+      <header class="sr-section-head">
+        <p class="sr-section-label">The honest cut</p>
+        <h2 class="sr-h2">Replacement, or restoration?</h2>
+        <p class="sr-section-sub">Not every {{ service.short | downcase }} job in {{ region_name }} can be solved with injection. Some genuinely need replacement. Here's how we tell the difference on site.</p>
+      </header>
 
-    <div class="service-region__diagnostic-grid">
-      <div class="service-region__diagnostic-card service-region__diagnostic-card--replace">
-        <h3>{{ service.diagnostic_replace.title }}</h3>
-        <ul>
-          {% for item in service.diagnostic_replace.bullets %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="service-region__diagnostic-card service-region__diagnostic-card--restore">
-        <h3>{{ service.diagnostic_restore.title }}</h3>
-        <ul>
-          {% for item in service.diagnostic_restore.bullets %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="service-region__cost">
-    <h2>Cost comparison: replacement vs. restoration in {{ region_name }}</h2>
-    <p>Indicative ranges based on typical {{ region_name }} projects. Final pricing depends on access, linear footage or square footage, and condition. Free written quotes after the on-site assessment.</p>
-
-    <div class="service-region__cost-grid">
-      <div class="service-region__cost-card">
-        <h3>Replacement</h3>
-        <p class="service-region__cost-price">${{ service.cost_compare.replacement_low }}{% if service.cost_compare.replacement_high != service.cost_compare.replacement_low %} &ndash; ${{ service.cost_compare.replacement_high }}{% endif %} <small>per {{ service.cost_compare.unit }}</small></p>
-        <p><strong>Timeline:</strong> {{ service.cost_compare.timeline_replacement }}</p>
-        <p><strong>Disruption:</strong> {{ service.cost_compare.disruption_replacement }}</p>
-      </div>
-      <div class="service-region__cost-card service-region__cost-card--featured">
-        <h3>Restoration (polyurethane injection)</h3>
-        <p class="service-region__cost-price">${{ service.cost_compare.restoration_low }}{% if service.cost_compare.restoration_high != service.cost_compare.restoration_low %} &ndash; ${{ service.cost_compare.restoration_high }}{% endif %} <small>per {{ service.cost_compare.unit }}</small></p>
-        <p><strong>Timeline:</strong> {{ service.cost_compare.timeline_restoration }}</p>
-        <p><strong>Disruption:</strong> {{ service.cost_compare.disruption_restoration }}</p>
+      <div class="sr-diagnostic">
+        <article class="sr-card sr-card--replace">
+          <header class="sr-card__head">
+            <span class="sr-card__icon" aria-hidden="true"><i class="fa-solid fa-wrench"></i></span>
+            <h3>{{ service.diagnostic_replace.title }}</h3>
+          </header>
+          <ul class="sr-card__list sr-card__list--x">
+            {% for item in service.diagnostic_replace.bullets %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+        <article class="sr-card sr-card--restore">
+          <header class="sr-card__head">
+            <span class="sr-card__icon" aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span>
+            <h3>{{ service.diagnostic_restore.title }}</h3>
+          </header>
+          <ul class="sr-card__list sr-card__list--check">
+            {% for item in service.diagnostic_restore.bullets %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="service-region__process">
-    <h2>How we do it</h2>
-    <ol class="service-region__process-list">
-      {% for step in service.process %}
-        <li>
-          <strong>{{ step.step }}.</strong> {{ step.detail }}
-        </li>
-      {% endfor %}
-    </ol>
+  {% comment %} Cost compare, dark contrast band {% endcomment %}
+  <section class="sr-band sr-band--dark">
+    <div class="sr-container">
+      <header class="sr-section-head">
+        <p class="sr-section-label sr-section-label--light">The math</p>
+        <h2 class="sr-h2 sr-h2--light">Replacement vs. restoration in {{ region_name }}</h2>
+        <p class="sr-section-sub sr-section-sub--light">Indicative ranges based on typical {{ region_name }} projects. Final pricing depends on access, scope, and condition. Free written quotes after the on-site assessment.</p>
+      </header>
+
+      <div class="sr-cost">
+        <div class="sr-cost__card">
+          <p class="sr-cost__label">Replacement</p>
+          <p class="sr-cost__price">${{ service.cost_compare.replacement_low }}{% if service.cost_compare.replacement_high != service.cost_compare.replacement_low %}<span class="sr-cost__sep">–</span>${{ service.cost_compare.replacement_high }}{% endif %}<span class="sr-cost__unit">/ {{ service.cost_compare.unit }}</span></p>
+          <dl class="sr-cost__detail">
+            <dt>Timeline</dt><dd>{{ service.cost_compare.timeline_replacement }}</dd>
+            <dt>Disruption</dt><dd>{{ service.cost_compare.disruption_replacement }}</dd>
+          </dl>
+        </div>
+        <div class="sr-cost__card sr-cost__card--featured">
+          <p class="sr-cost__label">Restoration <span class="sr-cost__tag">polyurethane injection</span></p>
+          <p class="sr-cost__price">${{ service.cost_compare.restoration_low }}{% if service.cost_compare.restoration_high != service.cost_compare.restoration_low %}<span class="sr-cost__sep">–</span>${{ service.cost_compare.restoration_high }}{% endif %}<span class="sr-cost__unit">/ {{ service.cost_compare.unit }}</span></p>
+          <dl class="sr-cost__detail">
+            <dt>Timeline</dt><dd>{{ service.cost_compare.timeline_restoration }}</dd>
+            <dt>Disruption</dt><dd>{{ service.cost_compare.disruption_restoration }}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="service-region__trust">
-    <h2>Why {{ region_name }} owners choose Ocean Spray FL</h2>
-    <ul>
-      {% for signal in service.trust_signals %}
-        <li>{{ signal }}</li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section class="service-region__faq">
-    <h2>Frequently asked questions</h2>
-    {% for faq in service.faq_template %}
-      <details class="service-region__faq-item">
-        <summary><strong>{{ faq.q | replace: placeholder, region_name }}</strong></summary>
-        <p>{{ faq.a | replace: placeholder, region_name }}</p>
-      </details>
-    {% endfor %}
+  {% comment %} Process steps, white band, prose-width {% endcomment %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">How we do it</p>
+      <h2 class="sr-h2">Four steps, typically one visit</h2>
+      <ol class="sr-steps">
+        {% for step in service.process %}
+          <li class="sr-steps__item">
+            <span class="sr-steps__num">{{ forloop.index }}</span>
+            <div class="sr-steps__body">
+              <h3>{{ step.step }}</h3>
+              <p>{{ step.detail }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
   </section>
 
   {% if page.local_callout %}
-  <section class="service-region__local-callout">
-    <h2>Notes for {{ region_name }} owners</h2>
-    {{ page.local_callout | markdownify }}
+  {% comment %} Region-specific notes, cream band, prose-width {% endcomment %}
+  <section class="sr-band sr-band--cream sr-local">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">{{ region_name }} notes</p>
+      <h2 class="sr-h2">What we see on the ground in {{ region_name }}</h2>
+      <div class="sr-local__body">
+        {{ page.local_callout | markdownify }}
+      </div>
+    </div>
   </section>
   {% endif %}
 
-  <section class="service-region__cta">
-    <h2>Free {{ service.short | downcase }} assessment in {{ region_name }}</h2>
-    <p>We come out, sound the {% if page.service == 'seawall-stabilization' %}wall and the soil behind it{% else %}slab and underlying fill{% endif %}, and tell you straight whether you need restoration, replacement, or just monitoring. No pressure. No upsell.</p>
-    <p class="service-region__actions">
-      <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Request a Quote</a>
-      <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
-        <i class="fa-solid fa-phone" aria-hidden="true"></i>
-        {{ site.business.phone }}
-      </a>
-    </p>
+  {% comment %} Trust signals, white band, chip layout {% endcomment %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">Why {{ region_name }} owners choose us</p>
+      <h2 class="sr-h2">A short list, no spin</h2>
+      <ul class="sr-trust">
+        {% for signal in service.trust_signals %}
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>{{ signal }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
 
-  <section class="service-region__siblings">
-    <h2>Other {{ region_name }} services</h2>
-    <ul>
-      {% for s in site.data.seo_services %}
-        {% if s.slug != page.service %}
-          {% case s.slug %}
-            {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
-            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
-            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
-            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
-          {% endcase %}
-          {% assign w = region.weight[weight_key] %}
-          {% if w != "skip" and w != nil %}
-            <li><a href="{{ '/' | append: s.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">{{ s.name }} in {{ region_name }}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </ul>
+  {% comment %} FAQ, cream band, prose-width, native disclosure {% endcomment %}
+  <section class="sr-band sr-band--cream">
+    <div class="sr-container sr-container--prose">
+      <p class="sr-section-label">FAQ</p>
+      <h2 class="sr-h2">Frequently asked questions</h2>
+      <div class="sr-faq">
+        {% for faq in service.faq_template %}
+          <details class="sr-faq__item">
+            <summary class="sr-faq__q">
+              <span>{{ faq.q | replace: placeholder, region_name }}</span>
+              <span class="sr-faq__chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+            </summary>
+            <div class="sr-faq__a"><p>{{ faq.a | replace: placeholder, region_name }}</p></div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-    <h2>{{ service_name }} in nearby cities</h2>
-    <ul>
-      {% for r in site.data.regions %}
-        {% if r.slug != region.slug %}
-          {% case page.service %}
-            {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
-            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
-            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
-            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
-          {% endcase %}
-          {% assign w = r.weight[weight_key] %}
-          {% if w != "skip" and w != nil %}
-            <li><a href="{{ '/' | append: page.service | append: '/' | append: r.slug | append: '/' | relative_url }}">{{ service_name }} in {{ r.name }}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </ul>
+  {% comment %} CTA strip, gradient {% endcomment %}
+  <section class="sr-cta">
+    <div class="sr-container sr-container--prose sr-cta__inner">
+      <h2 class="sr-cta__title">Free {{ service.short | downcase }} assessment in {{ region_name }}</h2>
+      <p class="sr-cta__body">We come out, sound the {% if page.service == 'seawall-stabilization' %}wall and the soil behind it{% else %}slab and underlying fill{% endif %}, and tell you straight whether you need restoration, replacement, or just monitoring. No pressure. No upsell.</p>
+      <div class="sr-actions sr-actions--center">
+        <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Request a Quote</a>
+        <a class="btn btn--ghost" href="{{ site.business.phone_href }}">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          {{ site.business.phone }}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {% comment %} Cross-links, white band {% endcomment %}
+  <section class="sr-band sr-band--white">
+    <div class="sr-container">
+      <div class="sr-crosslinks">
+        <div class="sr-crosslinks__col">
+          <p class="sr-section-label">Other services in {{ region_name }}</p>
+          <ul class="sr-crosslinks__list">
+            {% for s in site.data.seo_services %}
+              {% if s.slug != page.service %}
+                {% case s.slug %}
+                  {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
+                  {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
+                  {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
+                  {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
+                {% endcase %}
+                {% assign w = region.weight[weight_key] %}
+                {% if w != "skip" and w != nil %}
+                  <li><a href="{{ '/' | append: s.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">{{ s.name }} in {{ region_name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="sr-crosslinks__col">
+          <p class="sr-section-label">{{ service_name }} nearby</p>
+          <ul class="sr-crosslinks__list">
+            {% for r in site.data.regions %}
+              {% if r.slug != region.slug %}
+                {% case page.service %}
+                  {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
+                  {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
+                  {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
+                  {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
+                {% endcase %}
+                {% assign w = r.weight[weight_key] %}
+                {% if w != "skip" and w != nil %}
+                  <li><a href="{{ '/' | append: page.service | append: '/' | append: r.slug | append: '/' | relative_url }}">{{ r.name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
 </article>
 
-{% comment %} JSON-LD structured data {% endcomment %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -196,19 +265,7 @@ layout: default
       "addressLocality": "Bonita Springs",
       "addressRegion": "FL",
       "addressCountry": "US"
-    },
-    "areaServed": [
-      {% for r in site.data.regions %}
-      {
-        "@type": "City",
-        "name": "{{ r.name }}",
-        "containedInPlace": {
-          "@type": "AdministrativeArea",
-          "name": "{{ r.county }}"
-        }
-      }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    ]
+    }
   },
   "areaServed": {
     "@type": "City",
