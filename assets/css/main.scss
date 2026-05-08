@@ -27,8 +27,8 @@
   --c-brand-ink:  #2f5666;        /* deeper brand for hover */
   --c-accent:     #a9c8d4;        /* Squarespace accent — soft coastal blue */
   --c-accent-ink: #59a3c0;        /* stronger accent for emphasis */
-  --c-warm:       #c9a87f;        /* warm sand — primary CTA accent */
-  --c-warm-ink:   #a98861;        /* darker warm sand for hover */
+  --c-warm:       #e8a87c;        /* coral peach — primary CTA accent */
+  --c-warm-ink:   #d68a5e;        /* darker coral for hover */
   --c-success:    #1f8a5b;
   --c-danger:     #c0392b;
 
@@ -430,7 +430,7 @@ ul, ol { margin: 0 0 1em; padding-left: 1.2em; }
   margin-top: 0.5em;
 }
 .area-strip a { color: var(--c-warm); }
-.area-strip a:hover { color: #e6d2b1; }
+.area-strip a:hover { color: #f3c4a4; }
 
 /* ----- Home blog ----- */
 .home-blog {
