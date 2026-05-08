@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/fort-myers/
 service: seawall-stabilization
 region: fort-myers
 title: "Seawall Replacement in Fort Myers, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement in Fort Myers, FL — Or Restoration?"
+h1: "Seawall Replacement in Fort Myers, FL: Or Restoration?"
 description: >-
   Most failing Fort Myers seawalls don't need replacement.
   Polyurethane stabilization fixes the soil failure behind the wall

@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/marco-island/
 service: seawall-stabilization
 region: marco-island
 title: "Seawall Replacement on Marco Island, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement on Marco Island, FL — Or Restoration?"
+h1: "Seawall Replacement on Marco Island, FL: Or Restoration?"
 description: >-
   Most failing Marco Island seawalls don't need full replacement.
   Polyurethane stabilization fixes soil failure behind the wall

@@ -16,7 +16,7 @@
     - "sinkhole near seawall {region}"
     - "polyurethane seawall repair {region}"
     - "seawall cost {region}"
-  hero_question_pattern: "Seawall Replacement in {region}, FL — Or Restoration?"
+  hero_question_pattern: "Seawall Replacement in {region}, FL: Or Restoration?"
   meta_title_pattern: "Seawall Replacement in {region}, FL: Or Is Restoration the Smarter Call? | Ocean Spray FL"
   meta_description_pattern: >-
     Most failing seawalls in {region} don't need full replacement.

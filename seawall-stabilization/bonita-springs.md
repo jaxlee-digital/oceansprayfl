@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/bonita-springs/
 service: seawall-stabilization
 region: bonita-springs
 title: "Seawall Replacement in Bonita Springs, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement in Bonita Springs, FL — Or Restoration?"
+h1: "Seawall Replacement in Bonita Springs, FL: Or Restoration?"
 description: >-
   Most failing Bonita Springs seawalls don't actually need
   replacement. Polyurethane stabilization fixes soil failure

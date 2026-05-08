@@ -86,16 +86,16 @@ Pages dedicated to each service in each market we serve:
 
 Industrial and commercial:
 
-- [Fort Myers]({{ '/warehouse-slab-lifting/fort-myers/' | relative_url }}) — industrial corridor (Metro Parkway, Hanson, Daniels, Alico)
-- [Lehigh Acres]({{ '/warehouse-slab-lifting/lehigh-acres/' | relative_url }}) — Sunshine, Lee Blvd, SR-82
-- [Cape Coral]({{ '/warehouse-slab-lifting/cape-coral/' | relative_url }}) — Pine Island Road, Burnt Store
-- [Naples]({{ '/warehouse-slab-lifting/naples/' | relative_url }}) — J&C Boulevard, Airport-Pulling
-- [Bonita Springs]({{ '/warehouse-slab-lifting/bonita-springs/' | relative_url }}) — Old 41, Bonita Grande
-- [Estero]({{ '/warehouse-slab-lifting/estero/' | relative_url }}) — Three Oaks Parkway
+- [Fort Myers]({{ '/warehouse-slab-lifting/fort-myers/' | relative_url }}): industrial corridor (Metro Parkway, Hanson, Daniels, Alico)
+- [Lehigh Acres]({{ '/warehouse-slab-lifting/lehigh-acres/' | relative_url }}): Sunshine, Lee Blvd, SR-82
+- [Cape Coral]({{ '/warehouse-slab-lifting/cape-coral/' | relative_url }}): Pine Island Road, Burnt Store
+- [Naples]({{ '/warehouse-slab-lifting/naples/' | relative_url }}): J&C Boulevard, Airport-Pulling
+- [Bonita Springs]({{ '/warehouse-slab-lifting/bonita-springs/' | relative_url }}): Old 41, Bonita Grande
+- [Estero]({{ '/warehouse-slab-lifting/estero/' | relative_url }}): Three Oaks Parkway
 
 Boat storage and marina warehousing:
 
-- [Marco Island]({{ '/warehouse-slab-lifting/marco-island/' | relative_url }}) — dry-stack marinas, boat clubs, yacht storage
-- [Sanibel & Captiva]({{ '/warehouse-slab-lifting/sanibel/' | relative_url }}) — post-Ian marina rebuilds, dry-stack
+- [Marco Island]({{ '/warehouse-slab-lifting/marco-island/' | relative_url }}): dry-stack marinas, boat clubs, yacht storage
+- [Sanibel & Captiva]({{ '/warehouse-slab-lifting/sanibel/' | relative_url }}): post-Ian marina rebuilds, dry-stack
 
 [Request a free assessment →]({{ '/contact/' | relative_url }})

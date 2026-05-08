@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/cape-coral/
 service: seawall-stabilization
 region: cape-coral
 title: "Seawall Replacement in Cape Coral, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement in Cape Coral, FL — Or Restoration?"
+h1: "Seawall Replacement in Cape Coral, FL: Or Restoration?"
 description: >-
   Most failing seawalls in Cape Coral don't actually need
   replacement. After 60 years of tide cycles, the wall is usually

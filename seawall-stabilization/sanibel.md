@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/sanibel/
 service: seawall-stabilization
 region: sanibel
 title: "Seawall Replacement on Sanibel, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement on Sanibel, FL — Or Restoration?"
+h1: "Seawall Replacement on Sanibel, FL: Or Restoration?"
 description: >-
   Many Sanibel seawalls genuinely needed replacement after Ian. Many
   more can be restored with polyurethane injection at about half

@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/estero/
 service: seawall-stabilization
 region: estero
 title: "Seawall Replacement in Estero, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement in Estero, FL — Or Restoration?"
+h1: "Seawall Replacement in Estero, FL: Or Restoration?"
 description: >-
   Most failing Estero seawalls don't need replacement. Polyurethane
   stabilization fixes soil failure behind the wall at about half

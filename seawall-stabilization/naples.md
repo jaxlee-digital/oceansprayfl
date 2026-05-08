@@ -4,7 +4,7 @@ permalink: /seawall-stabilization/naples/
 service: seawall-stabilization
 region: naples
 title: "Seawall Replacement in Naples, FL: Or Is Restoration the Smarter Call?"
-h1: "Seawall Replacement in Naples, FL — Or Restoration?"
+h1: "Seawall Replacement in Naples, FL: Or Restoration?"
 description: >-
   Most failing Naples seawalls don't actually need replacement. The
   panels are usually intact; the soil behind them isn't.
