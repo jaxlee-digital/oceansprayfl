@@ -9,8 +9,8 @@ cover: /assets/images/services/metal-building-cover.jpg
 order: 3
 ---
 
-<div class="service-cols">
-<div>
+<div class="service-cols" markdown="1">
+<div markdown="1">
 
 ## Why metal buildings need spray foam
 
@@ -55,7 +55,7 @@ commercial structures across SWFL. Read [Red Iron Metal Building
 Project Profile]({{ '/blog/' | relative_url }}) for an example walkthrough.
 
 </div>
-<aside class="service-cols__aside">
+<aside class="service-cols__aside" markdown="1">
 
 ### Free assessments
 

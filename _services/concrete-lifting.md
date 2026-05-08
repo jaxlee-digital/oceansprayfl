@@ -9,8 +9,8 @@ cover: /assets/images/services/concrete-cover.jpg
 order: 2
 ---
 
-<div class="service-cols">
-<div>
+<div class="service-cols" markdown="1">
+<div markdown="1">
 
 ## How it works
 
@@ -66,7 +66,7 @@ that's the case. We'd rather lose the job than try to lift
 something that should be re-poured.
 
 </div>
-<aside class="service-cols__aside">
+<aside class="service-cols__aside" markdown="1">
 
 ### Pairs naturally with
 

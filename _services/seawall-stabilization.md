@@ -10,8 +10,12 @@ cover: /assets/images/services/seawall-cover.jpg
 order: 1
 ---
 
-<div class="service-cols">
-<div>
+<figure class="service__hero">
+  <img src="{{ '/assets/images/services/seawall-hero.webp' | relative_url }}" alt="Coastal seawall stabilization in Southwest Florida">
+</figure>
+
+<div class="service-cols" markdown="1">
+<div markdown="1">
 
 ## How it works
 
@@ -95,7 +99,7 @@ If your wall is structurally sound but the ground behind it is
 failing, stabilization is almost always the right call.
 
 </div>
-<aside class="service-cols__aside">
+<aside class="service-cols__aside" markdown="1">
 
 ### Pairs naturally with
 
