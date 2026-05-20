@@ -39,12 +39,11 @@ social:
     url: "https://www.instagram.com/oceansprayfl/"
     icon: "fa-brands fa-instagram"
 
-# GitHub Pages project-page subpath. Repo expected:
-# https://github.com/jaxlee-digital/oceansprayfl
-# Live URL: https://jaxlee-digital.github.io/oceansprayfl
-# When custom domain (oceansprayfl.com) is attached, set baseurl: ""
-baseurl: "/oceansprayfl"
-url: "https://jaxlee-digital.github.io"
+# Custom domain attached: oceansprayfl.com (canonical).
+# www + the other two domains (oceansprayfoam.us, oceansprayfoamfl.com)
+# point at GitHub Pages IPs and auto-301 to oceansprayfl.com.
+baseurl: ""
+url: "https://oceansprayfl.com"
 
 markdown: kramdown
 highlighter: rouge
