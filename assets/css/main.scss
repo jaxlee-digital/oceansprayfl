@@ -627,6 +627,130 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
   .service-cols { grid-template-columns: 1fr; }
 }
 
+/* ----- Service: full-bleed banner ----- */
+.service__banner {
+  margin: 1.5rem 0 2.5rem;
+  width: 100%;
+}
+.service__banner img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 50vh, 520px);
+  object-fit: cover;
+  object-position: center 70%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 600px) {
+  .service__banner img { height: 240px; }
+}
+
+/* ----- Warning-signs gallery ----- */
+.warning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.warning-card {
+  margin: 0;
+  background: var(--c-bg-alt);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+}
+.warning-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.warning-card figcaption,
+.warning-card--text {
+  padding: 1rem 1.1rem 1.15rem;
+  font-size: 0.97rem;
+  line-height: 1.5;
+  color: var(--c-ink);
+}
+.warning-card figcaption strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--c-brand);
+}
+.warning-card--text h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--c-brand);
+}
+.warning-card--text p {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+/* ----- FAQ accordion ----- */
+.faq {
+  margin: 1.25rem 0 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.faq details {
+  background: var(--c-bg-alt);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  border: 1px solid transparent;
+  transition: border-color 120ms ease;
+}
+.faq details[open] {
+  border-color: var(--c-brand);
+}
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.25rem;
+  color: var(--c-brand);
+  line-height: 1;
+}
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p {
+  margin: 0.75rem 0 0;
+  color: var(--c-ink-soft);
+}
+
+/* ----- Price-match strip (home + service aside) ----- */
+.price-match {
+  background: var(--c-brand);
+  color: #fff;
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+.price-match__inner {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+}
+.price-match h2 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.price-match p {
+  margin: 0;
+  color: rgba(255,255,255,0.92);
+}
+.price-match p + p { margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.85; }
+
 /* ----- Archive ----- */
 .archive {
   max-width: var(--max);

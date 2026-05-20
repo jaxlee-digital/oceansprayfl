@@ -3,15 +3,17 @@ title: Seawall Stabilization
 slug: seawall-stabilization
 summary: >-
   Certified, eco-friendly polyurethane resin injected behind your
-  seawall, at about half the cost of full replacement. Fills voids,
-  binds the soil, and stops the sink. No concrete weight, no heavy
-  equipment, no marine impact.
-cover: /assets/images/services/seawall-cover.jpg
+  seawall, bulkhead, or retaining wall. About half the cost of full
+  replacement, with a written-estimate price match. Fills voids,
+  binds the soil, and stops the sink. No demolition, no barges, no
+  marine impact.
 order: 1
 ---
 
-<figure class="service__hero">
-  <img src="{{ '/assets/images/services/seawall-hero.webp' | relative_url }}" alt="Coastal seawall stabilization in Southwest Florida">
+<figure class="service__banner">
+  <img src="{{ '/assets/images/services/seawall-hero.webp' | relative_url }}"
+       alt="Coastal seawall stabilization in Southwest Florida"
+       style="object-position: center 70%;">
 </figure>
 
 <div class="service-cols" markdown="1">
@@ -25,30 +27,111 @@ solution for coastal erosion and soil stabilization in Southwest
 Florida.
 
 We inject the resin deep into the ground behind your seawall,
-targeting the voids, depressions, and erosion channels created by
-tide action and soil loss. As the resin expands, it permeates the
-surrounding soil, fills every space, and binds the loose material
-into a solid, reinforced mass. The result: a stabilized soil
-structure that supports the wall without adding weight or stress.
+bulkhead, or retaining wall, targeting the voids, depressions, and
+erosion channels created by tide action and soil loss. As the
+resin expands, it permeates the surrounding soil, fills every
+space, and binds the loose material into a solid, reinforced mass.
+The result: a stabilized soil structure that supports the wall
+without adding weight or stress.
 
-## Why not concrete?
+## What to look for: 5 signs your seawall needs attention
 
-Filling voids with concrete is a common mistake. Concrete is heavy
-and brittle. It sinks into weakened soil, creates new voids, adds
-lateral pressure on the wall, and ultimately makes the failure
-worse. Polyurethane is engineered to be lightweight yet durable,
-exactly what a coastal soil column needs.
+The earlier we get to it, the cheaper the fix. Catch a wall in
+the early-warning stage and you're looking at about half the cost
+of full replacement. Wait until the wall itself tilts, leaks, or
+collapses and you're into a full marine-contractor rebuild
+(industry average ~$1,300 per linear foot, frequently $100,000+).
+
+<div class="warning-grid" markdown="0">
+
+  <figure class="warning-card">
+    <img src="{{ '/assets/images/services/warning-signs/cracked-cap-walkway.jpg' | relative_url }}"
+         alt="Cracked seawall cap with concrete walkway pulling away from the wall">
+    <figcaption>
+      <strong>Cracks in the cap, walkway pulling away.</strong>
+      Vertical or horizontal cracks running through the cap, and
+      adjoining sidewalks, patios, or pool decks settling or
+      cracking near the wall. The cap is doing more work than it
+      should because soil behind it is washing out.
+    </figcaption>
+  </figure>
+
+  <figure class="warning-card">
+    <img src="{{ '/assets/images/services/warning-signs/canal-spalling.jpg' | relative_url }}"
+         alt="Canal seawall with concrete debris visible at the waterline">
+    <figcaption>
+      <strong>Concrete spalling at the waterline.</strong>
+      Chunks of the wall face or cap visible in the water at the
+      base. The wall is actively failing and soil loss is
+      accelerating. Stabilization plus targeted repair is still
+      possible at this stage; another season may not be.
+    </figcaption>
+  </figure>
+
+  <div class="warning-card warning-card--text">
+    <h3>Sinkholes, voids, or depressions behind the cap</h3>
+    <p>
+      Soft spots, low spots, or visible cavities in the lawn,
+      landscape, or hardscape directly behind the seawall. Often
+      the first sign, and the cheapest to fix.
+    </p>
+  </div>
+
+  <div class="warning-card warning-card--text">
+    <h3>Leaning, bowing, or rotating slabs</h3>
+    <p>
+      Wall sections tilting seaward, bulging outward, or rotating
+      out of alignment. The structure is moving. Schedule an
+      inspection immediately.
+    </p>
+  </div>
+
+  <div class="warning-card warning-card--text">
+    <h3>Soil washing out through weep holes</h3>
+    <p>
+      Discolored water, sand streaks, or active flow through the
+      weep holes during tide changes. The wall is now the
+      drainage path. We seal the channels and install proper
+      drainage to relieve hydrostatic pressure without losing
+      more soil.
+    </p>
+  </div>
+
+</div>
+
+If you're seeing any of these, get a free inspection on the
+calendar. We'll tell you whether you need full stabilization, a
+targeted void-fill, or just monitoring. Not every wall needs work
+right now, and we'll say so when it doesn't.
+
+## Why not concrete grout?
+
+Filling voids with concrete is a common, expensive mistake.
+Concrete is heavy and brittle. It sinks into weakened soil,
+creates new voids beneath itself, adds lateral pressure on the
+wall, and ultimately makes the failure worse. It also takes
+weeks of equipment on your property and forces you off the
+hardscape during cure.
+
+Polyurethane is engineered to be lightweight yet durable, exactly
+what a coastal soil column needs. It cures in minutes, restores
+walkable surface within hours, and adds no weight to the soil
+column behind your wall.
 
 ## What we do
 
-- **Soil stabilization.** Bind loose, eroded fill behind seawalls
-  and along bulkheads.
+- **Soil stabilization.** Bind loose, eroded fill behind seawalls,
+  bulkheads, and retaining walls.
 - **Void filling.** Locate and fill the cavities tide action has
   carved out beneath caps and behind walls.
 - **Weep hole installation.** Engineered drainage that relieves
   hydrostatic pressure and slows future scour.
 - **Erosion channel sealing.** Close the paths water uses to pull
-  soil out from under your property.
+  soil out from under your property. Stops leaks measured in
+  gallons per minute.
+- **Adjacent concrete lifting.** Sunken pavers, pool deck slabs,
+  driveway sections, or walkways near the wall can be lifted
+  with the same equipment in the same trip.
 
 ## Environmentally responsible
 
@@ -59,59 +142,134 @@ That matters when you're working inches from the bay.
 
 ## Key advantages
 
-- **About half the cost of replacement.** Stabilization with
-  polyurethane typically runs around 50% of what tearing out and
-  rebuilding the seawall would cost, with none of the demolition,
-  permitting headaches, or extended downtime.
+- **About half the cost of replacement,** with a written-estimate
+  price match against any licensed Florida polyurethane
+  contractor.
+- **Doubles the life of your wall.** A stabilized wall keeps
+  working for decades instead of being torn out at year 15 or 20.
 - **Lightweight and strong.** Stabilizes soil without adding
   ground stress.
-- **Eco-friendly.** Safe for marine life and certified for use
+- **Eco-certified.** Safe for marine life and approved for use
   near water.
-- **Minimally invasive.** No heavy equipment, minimal disruption
-  to landscaping or hardscape.
-- **Fast-acting.** Resin sets quickly, allowing rapid restoration
-  and reinforcement on the same day.
-
-## Common warning signs
-
-If you're seeing any of these, give us a call:
-
-- Depressions or sinkholes appearing behind the seawall cap
-- Cracks running along the cap or through joints
-- Soil washing out at the base or through weep holes
-- The wall starting to lean or rotate seaward
-- Pavers, lawn, or landscape features tilting toward the water
-
-The earlier we get to it, the cheaper the fix. Stabilizing early
-keeps you in the "about half the cost" range instead of pushing
-you toward a full replacement.
+- **Minimally invasive.** No barges, no demolition, no heavy
+  marine equipment. Most jobs are walk-on the same day.
+- **Fast-acting.** Resin sets in minutes. Return-to-use measured
+  in hours, not days or weeks.
 
 ## Stabilization vs. replacement
 
 A full seawall tear-out and rebuild in SWFL is a major project:
 marine contractors, barges or land-side equipment, demolition,
-permits, and weeks of disruption. Polyurethane stabilization
-addresses the actual failure mode, soil loss and voids behind
-the wall, at roughly half the cost, in a fraction of the time,
-without removing the wall you already have.
+permits, weeks of disruption. Industry average runs ~$1,300 per
+linear foot. Most replacements (with lost soil, lost landscaping,
+and the rebuild) push past $100,000.
 
-If your wall is structurally sound but the ground behind it is
-failing, stabilization is almost always the right call.
+Polyurethane stabilization addresses the actual failure mode,
+soil loss and voids behind the wall, at roughly half the cost,
+in a fraction of the time, without removing the wall you already
+have. If your wall is structurally sound but the ground behind
+it is failing, stabilization is almost always the right call.
+
+A note on insurance: standard homeowners policies typically do
+**not** cover seawall damage outside of named-storm events.
+Catching the problem early means it stays a maintenance expense
+instead of a six-figure surprise.
+
+## Frequently asked questions
+
+<div class="faq" markdown="0">
+
+  <details>
+    <summary>Is polyurethane resin safe for marine life?</summary>
+    <p>
+      Yes. The resin we use is certified environmentally friendly
+      and chemically inert once cured. It's approved for use
+      adjacent to marine ecosystems, recreational water bodies,
+      and drinking water sources.
+    </p>
+  </details>
+
+  <details>
+    <summary>How long does a stabilized seawall last?</summary>
+    <p>
+      Properly installed polyurethane stabilization typically
+      doubles the remaining service life of your wall. A wall
+      that would have needed replacement in 5–10 years often
+      keeps working for another 20+. Ongoing inspections every
+      few years catch any new soil movement before it becomes a
+      problem.
+    </p>
+  </details>
+
+  <details>
+    <summary>How long does the work take?</summary>
+    <p>
+      Most residential stabilization jobs are completed in one
+      day. The resin cures in minutes, and you can typically
+      walk on the area the same afternoon. No barges, no marine
+      equipment, no extended closure of your dock or pool deck.
+    </p>
+  </details>
+
+  <details>
+    <summary>Do I need permits?</summary>
+    <p>
+      Stabilization performed land-side, behind your existing
+      wall, generally falls outside the marine-permit
+      requirements that govern replacement. We'll confirm for
+      your specific property and jurisdiction during the
+      inspection.
+    </p>
+  </details>
+
+  <details>
+    <summary>Can you really beat any quote?</summary>
+    <p>
+      We match any written estimate from a licensed Florida
+      polyurethane seawall contractor. Bring us the quote (in
+      writing, from a licensed contractor, on a comparable
+      scope of work) and we'll match it. We can do that because
+      we're a local SWFL operation with no franchise overhead.
+    </p>
+  </details>
+
+  <details>
+    <summary>How do I know if I need full stabilization or just a void fill?</summary>
+    <p>
+      That's what the free inspection is for. Not every wall
+      needs the full treatment. We'll tell you honestly whether
+      you need stabilization across a section, a targeted
+      void-fill in one or two spots, or just monitoring for
+      another year.
+    </p>
+  </details>
+
+</div>
 
 </div>
 <aside class="service-cols__aside" markdown="1">
 
-### Pairs naturally with
+### Price-match guarantee
 
-**[Concrete Lifting]({{ '/services/concrete-lifting/' | relative_url }}).** Once the soil behind your seawall is stabilized, any sunken pavers, pool deck, or driveway slabs can be lifted with the same equipment in the same trip.
+Bring us a written estimate from any licensed Florida
+polyurethane seawall contractor (Helicon, Seawall Kings, Seawall
+Savers, or others). We'll match it.
 
-### Free assessments
+### Free inspections
 
-Across SWFL. We'll tell you whether you need full stabilization, a targeted void-fill, or just monitoring.
+Across SWFL. We'll tell you whether you need full stabilization,
+a targeted void-fill, or just monitoring. No pressure, no obligation.
 
 [Request a quote →]({{ '/contact/' | relative_url }})
 
 [{{ site.business.phone }}]({{ site.business.phone_href }})
+
+### Pairs naturally with
+
+**[Concrete Lifting]({{ '/services/concrete-lifting/' | relative_url }}).**
+Once the soil behind your seawall is stabilized, any sunken
+pavers, pool deck, or driveway slabs can be lifted with the same
+equipment in the same trip.
 
 </aside>
 </div>
