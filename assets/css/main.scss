@@ -1565,3 +1565,7 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 .matrix-tag {
   font-size: 0.72rem;
   color: var(--c-accent, #d68a5e);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
