@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} - Seawall Stabilization & Concrete Lifting in SWFL{% endif %}</title>
+  {%- comment -%}
+    <title> is owned by jekyll-seo-tag below. Do not add a manual <title>
+    here; that produces duplicate tags and inconsistent separators.
+    Site-wide fallback title is configured in _config.yml.
+  {%- endcomment -%}
   <style>
     /* Critical: prevent FOUC on header CTA button */
     .site-nav__cta,
