@@ -531,7 +531,7 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 .site-footer a:hover { color: var(--c-accent); text-decoration: none; }
 .site-footer__base {
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 2rem;
   max-width: var(--max);
   margin: 0 auto;
   display: flex;
@@ -815,6 +815,7 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 .embed-form iframe {
   display: block;
   width: 100%;
+  min-height: 600px;
   border: 0;
   background: #fff;
 }
@@ -855,7 +856,6 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 }
 @media (max-width: 600px) {
   .embed-map iframe { height: 360px; }
-  .embed-form iframe { min-height: 1450px; }
 }
 
 /* ----- Mobile nav ----- */

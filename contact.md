@@ -5,18 +5,11 @@ subtitle: "Free, no-obligation assessments across Southwest Florida."
 permalink: /contact/
 ---
 
-The fastest way to reach us is by phone or text.
-
-## Direct contact
-
-- **Call or text:** [{{ site.business.phone }}]({{ site.business.phone_href }})
-- **Email:** [{{ site.business.email }}]({{ site.business.email_href }})
-- **Headquarters:** {{ site.business.hq }}
+The fastest way to reach us is the contact form below. Fill it
+out and we'll get back to you with next steps and, when possible,
+a same- or next-day on-site assessment.
 
 ## Send us details
-
-Fill out the form below and we'll get back to you with next steps
-and, when possible, a same- or next-day on-site assessment.
 
 <div class="embed-form">
   <iframe
@@ -26,11 +19,17 @@ and, when possible, a same- or next-day on-site assessment.
     data-form-id="ECatHtnA000aOuuESAOo"
     data-form-name="Contact Us"
     data-layout-iframe-id="inline-ECatHtnA000aOuuESAOo"
-    style="width:100%;min-height:1303px;border:none;border-radius:6px;"
+    style="width:100%;border:none;border-radius:6px;"
     loading="lazy">
   </iframe>
   <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
 </div>
+
+## Other ways to reach us
+
+- **Call or text:** [{{ site.business.phone }}]({{ site.business.phone_href }})
+- **Email:** [{{ site.business.email }}]({{ site.business.email_href }})
+- **Headquarters:** {{ site.business.hq }}
 
 Prefer email? Include your property address, a short description of
 the problem (sinking slab, leaning seawall, void behind cap, etc.),
