@@ -95,9 +95,9 @@ podman run -d --name oceanspray-preview \
   -p 127.0.0.1:4000:4000 \
   -e HOME=/tmp \
   docker.io/library/ruby:3.2 \
-  sh -c "bundle install --quiet && bundle exec jekyll serve --host 0.0.0.0 --baseurl /oceansprayfl"
+  sh -c "bundle install --quiet && bundle exec jekyll serve --host 0.0.0.0"
 
-# Browse: http://localhost:4000/oceansprayfl/   (trailing slash matters)
+# Browse: http://localhost:4000/   (no baseurl, custom domain is live)
 ```
 
 Management:
@@ -109,16 +109,12 @@ podman start oceanspray-preview
 podman rm -f oceanspray-preview
 ```
 
-URL gotcha: with `baseurl: /oceansprayfl`, the site is at
-`/oceansprayfl/` **with** the trailing slash. No slash → 404.
-Goes away once the custom domain is attached.
-
 Full Podman recipe and rationale: `infra/oceanspray-site/README.md`.
 
 ## Repo-specific rules
 
-- **`baseurl` is `/oceansprayfl`.** Don't blank it until DNS
-  is on Pages.
+- **`baseurl` is empty.** Custom domain is attached. Do not
+  reintroduce `/oceansprayfl` — it will break every link.
 - **Internal links** must use `{{ site.baseurl }}/path/`.
 - **Business info is in `_config.yml`** under `business:`.
   Templates reference it as `site.business.<field>`. Single
@@ -129,6 +125,51 @@ Full Podman recipe and rationale: `infra/oceanspray-site/README.md`.
 - **Positioning matters.** Do not add general residential
   spray-foam insulation content. The pivot away from that is
   intentional — see `personal/business/ocean-spray-fl.md`.
+
+## SELinux + Podman preview gotcha
+
+The Podman preview container mounts the site with `:Z`, which assigns
+an SELinux `container_file_t` label so only this container can read
+the files. The OpenClaw `edit` tool writes files through a temp path
+and the result lands with `user_tmp_t` instead. The container then
+fails the next rebuild with:
+
+```
+Error: Permission denied @ rb_sysopen - /site/assets/css/main.scss
+```
+
+After editing any file in this repo while the preview container is
+running, restore the label:
+
+```bash
+SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
+# Check
+stat -c %C "$SITE/assets/css/main.scss"
+# Fix (use any file the container already reads as the reference)
+chcon --reference="$SITE/Gemfile" "$SITE/assets/css/main.scss"
+```
+
+For a batch of edits, sweep the whole repo (skips _site, vendor,
+.git, .jekyll-cache):
+
+```bash
+SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
+find "$SITE" \
+  -path "$SITE/_site" -prune -o \
+  -path "$SITE/vendor" -prune -o \
+  -path "$SITE/.git" -prune -o \
+  -path "$SITE/.jekyll-cache" -prune -o \
+  -type f -print 2>/dev/null \
+  | while read f; do
+      ctx=$(stat -c %C "$f" 2>/dev/null)
+      if echo "$ctx" | grep -q "user_tmp_t"; then
+        chcon --reference="$SITE/Gemfile" "$f"
+      fi
+    done
+```
+
+Does not affect git or the live deploy. Only matters for the local
+Podman preview during an editing session.
 
 ## Git ops — location matters
 
