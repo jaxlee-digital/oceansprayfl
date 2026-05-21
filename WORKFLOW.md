@@ -225,12 +225,30 @@ Full identity policy: `personal/security/identities.md`.
 Same as jaxlee-site: drafts only until approved, only finished
 work goes up, explicit OK required before push.
 
-For this site there's an extra wrinkle — it's a **business**
-site for a venture with Adam. Anything that affects positioning,
-pricing, service claims, or warranty language should get an extra
-"is Adam aware?" beat from Sheehan before shipping. Don't push
-business-substantive copy on Sheehan's nod alone unless he
-confirms Adam is in the loop.
+**Always send a screenshot of the local preview before asking for
+deploy approval.** Sheehan needs to see the rendered result, not
+just a diff or a description. Pattern:
+
+1. Make changes, restart preview if `_config.yml` was touched.
+2. Confirm the rebuild was clean (`podman logs --tail 10 oceanspray-preview`).
+3. Take a screenshot of the affected page(s):
+
+   ```bash
+   mkdir -p /tmp/oceanspray-preview-shots && chmod 777 /tmp/oceanspray-preview-shots
+   podman run --rm --network host --user 0:0 \
+     -v /tmp/oceanspray-preview-shots:/out:Z \
+     docker.io/zenika/alpine-chrome --no-sandbox \
+     --hide-scrollbars --window-size=1280,900 \
+     --screenshot=/out/home.png \
+     http://localhost:4000/
+   cp /tmp/oceanspray-preview-shots/home.png \
+     /home/sheehan/.openclaw/workspace/oceanspray-rebrand-preview.png
+   ```
+
+4. Attach via `MEDIA:/home/sheehan/.openclaw/workspace/<file>.png`
+   in the reply.
+5. Wait for explicit "push" before committing.
+6. Clean up the workspace-root preview image after push.
 
 ## Where things live
 
