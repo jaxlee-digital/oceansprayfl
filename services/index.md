@@ -4,7 +4,7 @@ title: Services
 subtitle: "Polyurethane injection, done right. For seawalls, slabs, and metal buildings."
 permalink: /services/
 description: >-
-  Ocean Spray FL services: seawall stabilization, concrete lifting
+  Ocean Spray Foam services: seawall stabilization, concrete lifting
   (driveways, pool decks, warehouse slabs), and metal building
   insulation across Southwest Florida.
 ---

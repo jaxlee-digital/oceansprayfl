@@ -1,7 +1,7 @@
 ---
 title: "How invasive iguanas damage SWFL seawalls, and how foam stabilization restores them"
 date: 2026-02-13
-author: Ocean Spray FL
+author: Ocean Spray Foam
 tags: [seawall, swfl, foam-injection]
 excerpt: >-
   Green iguanas are a quiet structural threat to Southwest Florida

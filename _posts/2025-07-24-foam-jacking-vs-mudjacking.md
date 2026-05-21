@@ -1,7 +1,7 @@
 ---
 title: "Why polyurethane foam jacking beats traditional mudjacking every time"
 date: 2025-07-24
-author: Ocean Spray FL
+author: Ocean Spray Foam
 tags: [concrete-lifting, foam-injection, swfl]
 excerpt: >-
   Thinking about mudjacking to fix your sunken concrete? Here's why

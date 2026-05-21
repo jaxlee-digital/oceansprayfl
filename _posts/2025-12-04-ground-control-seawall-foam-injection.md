@@ -1,7 +1,7 @@
 ---
 title: "Ground control: how foam injection brought a seawall back to life"
 date: 2025-12-04
-author: Ocean Spray FL
+author: Ocean Spray Foam
 tags: [seawall, project-profile, foam-injection]
 excerpt: >-
   A SWFL homeowner watched their lawn slowly sink toward a leaning

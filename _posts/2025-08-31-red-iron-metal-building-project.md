@@ -1,7 +1,7 @@
 ---
 title: "Red iron metal building, project profile"
 date: 2025-08-31
-author: Ocean Spray FL
+author: Ocean Spray Foam
 tags: [metal-building, insulation, project-profile]
 excerpt: >-
   A red-iron commercial metal building in SWFL gets fully closed-cell

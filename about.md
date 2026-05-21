@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About Ocean Spray FL
+title: About Ocean Spray Foam
 permalink: /about/
 ---
 
-Ocean Spray FL is a family-run polyurethane injection contractor based
+Ocean Spray Foam is a family-run polyurethane injection contractor based
 in Bonita Springs, Florida. We specialize in **seawall stabilization**
 and **concrete lifting**, using the same lightweight, eco-certified
 resin to solve two of the most common ground-movement problems in

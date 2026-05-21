@@ -1,7 +1,7 @@
 ---
 title: "Most Florida seawalls don't need replacing: foam injection saves homeowners thousands"
 date: 2026-05-07
-author: Ocean Spray FL
+author: Ocean Spray Foam
 tags: [seawall, cost, foam-injection, swfl]
 excerpt: >-
   Most failing seawalls in Southwest Florida don't need to be torn

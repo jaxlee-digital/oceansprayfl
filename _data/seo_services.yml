@@ -17,11 +17,11 @@
     - "polyurethane seawall repair {region}"
     - "seawall cost {region}"
   hero_question_pattern: "Seawall Replacement in {region}, FL: Or Restoration?"
-  meta_title_pattern: "Seawall Replacement in {region}, FL: Or Is Restoration the Smarter Call? | Ocean Spray FL"
+  meta_title_pattern: "Seawall Replacement in {region}, FL: Or Is Restoration the Smarter Call? | Ocean Spray Foam"
   meta_description_pattern: >-
     Most failing seawalls in {region} don't need full replacement.
     Polyurethane stabilization fixes the soil failure behind the
-    wall at about half the cost. Free assessments. Ocean Spray FL.
+    wall at about half the cost. Free assessments. Ocean Spray Foam.
   intent_lead: >-
     If you searched for seawall replacement, you already know your
     wall is in trouble. The question worth asking before you call
@@ -131,7 +131,7 @@
     - "polyjacking pool deck {region}"
     - "mudjacking pool deck {region}"
   hero_question_pattern: "Pool Deck Lifting in {region}, FL"
-  meta_title_pattern: "Pool Deck Lifting & Leveling in {region}, FL | Ocean Spray FL"
+  meta_title_pattern: "Pool Deck Lifting & Leveling in {region}, FL | Ocean Spray Foam"
   meta_description_pattern: >-
     Sunken pool deck in {region}? We lift and level concrete pool
     decks with polyurethane injection in a single visit. No demo,
@@ -241,7 +241,7 @@
     - "polyjacking driveway {region}"
     - "mudjacking driveway {region}"
   hero_question_pattern: "Driveway Lifting in {region}, FL"
-  meta_title_pattern: "Driveway Lifting & Leveling in {region}, FL | Ocean Spray FL"
+  meta_title_pattern: "Driveway Lifting & Leveling in {region}, FL | Ocean Spray Foam"
   meta_description_pattern: >-
     Sunken driveway in {region}? Polyurethane injection lifts and
     levels concrete driveways in a single visit. No demolition,
@@ -344,7 +344,7 @@
     - "polyurethane slab lifting {region}"
     - "warehouse floor repair {region}"
   hero_question_pattern: "Warehouse & Commercial Slab Lifting in {region}, FL"
-  meta_title_pattern: "Warehouse & Commercial Slab Lifting in {region}, FL | Ocean Spray FL"
+  meta_title_pattern: "Warehouse & Commercial Slab Lifting in {region}, FL | Ocean Spray Foam"
   meta_description_pattern: >-
     Settled warehouse floors in {region}? Polyurethane injection
     lifts industrial slabs without shutting down operations. No
