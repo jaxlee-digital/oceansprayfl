@@ -5,15 +5,15 @@ description: >-
   certified, eco-friendly polyurethane resin. Serving Bonita Springs,
   Naples, Estero, Fort Myers, Marco Island, and the rest of SWFL.
 author: Ocean Spray FL
-email: "Adam@OceanSprayFL.com"
+email: "info@oceansprayfl.com"
 
 # Business contact (used by templates)
 business:
   name: "Ocean Spray FL"
   phone: "(239) 444-7792"
   phone_href: "tel:+12394447792"
-  email: "Adam@OceanSprayFL.com"
-  email_href: "mailto:Adam@OceanSprayFL.com"
+  email: "info@oceansprayfl.com"
+  email_href: "mailto:info@oceansprayfl.com"
   hq: "Bonita Springs, FL"
   service_area:
     - Bonita Springs

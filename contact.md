@@ -37,22 +37,27 @@ the problem (sinking slab, leaning seawall, void behind cap, etc.),
 a few photos if you can, and the best phone number to reach you at.
 Send it to [{{ site.business.email }}]({{ site.business.email_href }}).
 
-## Book a call
+<!--
+  Book-a-call section hidden 2026-05-21 pending GHL calendar setup.
+  Restore once the calendar is configured and tested.
 
-Pick a time that works for you and we'll be on the line. Free, no
-obligation.
+  ## Book a call
 
-<div class="embed-booking">
-  <iframe
-    src="https://api.leadconnectorhq.com/widget/booking/ZL9x1e0S5QX4KjHTtDuA"
-    title="Book a call with Ocean Spray FL"
-    id="ZL9x1e0S5QX4KjHTtDuA_embed"
-    style="width:100%;border:none;overflow:hidden;"
-    scrolling="no"
-    loading="lazy">
-  </iframe>
-  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
-</div>
+  Pick a time that works for you and we'll be on the line. Free, no
+  obligation.
+
+  <div class="embed-booking">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/booking/ZL9x1e0S5QX4KjHTtDuA"
+      title="Book a call with Ocean Spray FL"
+      id="ZL9x1e0S5QX4KjHTtDuA_embed"
+      style="width:100%;border:none;overflow:hidden;"
+      scrolling="no"
+      loading="lazy">
+    </iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+  </div>
+-->
 
 ## Service area
 

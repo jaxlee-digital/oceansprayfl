@@ -799,16 +799,16 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 /* ----- Embedded form (LeadConnector) ----- */
 .embed-form {
   margin: 1.5rem 0 2rem;
-  background: var(--c-bg-alt);
   border-radius: var(--radius);
-  padding: 0.5rem;
+  overflow: hidden;
   box-shadow: var(--shadow);
+  background: #fff;
+  line-height: 0; /* kill iframe baseline gap */
 }
 .embed-form iframe {
   display: block;
   width: 100%;
   border: 0;
-  border-radius: calc(var(--radius) - 2px);
   background: #fff;
 }
 

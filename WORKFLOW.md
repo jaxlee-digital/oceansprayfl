@@ -8,6 +8,11 @@ before publishing or deploying anything to this repo.
 ## TL;DR
 
 - **Repo:** `jaxlee-digital/oceansprayfl` (GitHub)
+- **Local path:** `~/.openclaw/workspace/oceanspray-site/` — this is
+  its **own git repo**, nested inside the workspace but not part of
+  the workspace repo. **Always `cd ~/.openclaw/workspace/oceanspray-site`
+  before any git command.** Running `git status` from the workspace
+  root will show the workspace's tree, not this site's.
 - **Live (current):** https://jaxlee-digital.github.io/oceansprayfl
 - **Live (planned):** https://oceansprayfl.com (DNS still on
   Squarespace; flip pending — see `infra/oceanspray-site/README.md`
@@ -122,6 +127,22 @@ Full Podman recipe and rationale: `infra/oceanspray-site/README.md`.
 - **Positioning matters.** Do not add general residential
   spray-foam insulation content. The pivot away from that is
   intentional — see `personal/business/ocean-spray-fl.md`.
+
+## Git ops — location matters
+
+**Always `cd` into `oceanspray-site/` first.** This repo is a
+nested git repo inside the workspace. Running `git status`,
+`git add`, `git commit`, `git push`, etc. from the workspace root
+will touch the workspace repo (and miss this site's changes).
+
+```bash
+cd ~/.openclaw/workspace/oceanspray-site
+git status   # confirms branch=main, remote=jaxlee-digital/oceansprayfl
+```
+
+If `git rev-parse --show-toplevel` returns the workspace path
+instead of `.../oceanspray-site`, you're in the wrong place —
+stop and `cd` first.
 
 ## Git auth — required setup
 
