@@ -10,9 +10,11 @@ before publishing or deploying anything to this repo.
 - **Repo:** `jaxlee-digital/oceansprayfl` (GitHub)
 - **Local path:** `~/.openclaw/workspace/oceanspray-site/` — this is
   its **own git repo**, nested inside the workspace but not part of
-  the workspace repo. **Always `cd ~/.openclaw/workspace/oceanspray-site`
-  before any git command.** Running `git status` from the workspace
-  root will show the workspace's tree, not this site's.
+  the workspace repo. **Always target it explicitly with `git -C
+  /home/sheehan/.openclaw/workspace/oceanspray-site …`.** `cd` does
+  not persist across exec calls in the OpenClaw gateway, so `cd` +
+  `git status` will silently run against the workspace repo and
+  miss this site's changes.
 - **Live (current):** https://jaxlee-digital.github.io/oceansprayfl
 - **Live (planned):** https://oceansprayfl.com (DNS still on
   Squarespace; flip pending — see `infra/oceanspray-site/README.md`
@@ -130,19 +132,32 @@ Full Podman recipe and rationale: `infra/oceanspray-site/README.md`.
 
 ## Git ops — location matters
 
-**Always `cd` into `oceanspray-site/` first.** This repo is a
-nested git repo inside the workspace. Running `git status`,
-`git add`, `git commit`, `git push`, etc. from the workspace root
-will touch the workspace repo (and miss this site's changes).
+**Use `git -C <absolute-path>` for every git command.** `cd` does
+not persist between exec calls in the OpenClaw gateway — each
+command re-enters from `workdir`, so `cd oceanspray-site && git …`
+actually runs git from the workspace root. The workspace repo is
+a separate git repo that tracks this whole tree as content, so a
+wrong-path `git add -A` will silently stage workspace files.
+
+Right pattern:
 
 ```bash
-cd ~/.openclaw/workspace/oceanspray-site
-git status   # confirms branch=main, remote=jaxlee-digital/oceansprayfl
+SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
+git -C "$SITE" status
+git -C "$SITE" add <files>
+git -C "$SITE" commit -m "..."
+git -C "$SITE" push origin main
 ```
 
-If `git rev-parse --show-toplevel` returns the workspace path
-instead of `.../oceanspray-site`, you're in the wrong place —
-stop and `cd` first.
+Sanity check before any add/commit:
+
+```bash
+git -C "$SITE" rev-parse --show-toplevel
+# must print: /home/sheehan/.openclaw/workspace/oceanspray-site
+```
+
+If it prints the workspace path instead, you're targeting the
+wrong repo — stop and re-check the `-C` path.
 
 ## Git auth — required setup
 
