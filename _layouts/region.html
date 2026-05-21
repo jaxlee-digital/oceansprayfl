@@ -157,27 +157,51 @@ layout: default
 
 </article>
 
+{%- comment -%}
+  Per-region Service schema. Site-wide LocalBusiness lives in
+  _includes/schema-localbusiness.html (rendered from default.html).
+  This block declares each major service we offer in this city.
+{%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "{{ site.business.name }}",
-  "telephone": "{{ site.business.phone }}",
-  "email": "{{ site.business.email }}",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bonita Springs",
-    "addressRegion": "FL",
-    "addressCountry": "US"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "{{ region_name }}",
-    "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "{{ region.county }}"
+  "@graph": [
+    {
+      "@type": "Service",
+      "serviceType": "Seawall stabilization",
+      "provider": {"@id": "{{ site.url }}/#business"},
+      "areaServed": {
+        "@type": "City",
+        "name": {{ region_name | jsonify }},
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": {{ region.county | jsonify }}
+        }
+      },
+      "description": "Polyurethane foam injection behind failing seawalls in {{ region_name }}, FL. Restores stability without full replacement."
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Concrete lifting",
+      "provider": {"@id": "{{ site.url }}/#business"},
+      "areaServed": {
+        "@type": "City",
+        "name": {{ region_name | jsonify }},
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": {{ region.county | jsonify }}
+        }
+      },
+      "description": "Driveway, pool deck, and warehouse slab lifting in {{ region_name }}, FL using polyurethane foam injection."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}",
+      "url": "{{ page.url | absolute_url }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | default: region.geographic_summary | strip_newlines | jsonify }},
+      "about": {"@id": "{{ site.url }}/#business"}
     }
-  },
-  "description": {{ page.description | default: region.geographic_summary | strip_newlines | jsonify }}
+  ]
 }
 </script>

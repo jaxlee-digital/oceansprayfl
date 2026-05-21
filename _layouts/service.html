@@ -25,3 +25,22 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+{%- comment -%}
+  Service schema. Site-wide LocalBusiness lives in default.html.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": {{ page.title | jsonify }},
+  "provider": {"@id": "{{ site.url }}/#business"},
+  "description": {{ page.summary | default: page.description | default: site.description | strip_newlines | jsonify }},
+  "areaServed": [
+    {%- for city in site.business.service_area -%}
+    {"@type": "City", "name": {{ city | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ],
+  "url": "{{ page.url | absolute_url }}"
+}
+</script>

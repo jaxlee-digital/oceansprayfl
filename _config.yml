@@ -70,9 +70,23 @@ defaults:
   - scope: { path: "", type: "posts" }
     values: { layout: "post" }
   - scope: { path: "", type: "services" }
-    values: { layout: "service" }
+    values:
+      layout: "service"
+      # jekyll-seo-tag otherwise emits @type=BlogPosting on collection
+      # items, which is wrong for service pages. Force WebPage; real
+      # Service schema is emitted by _layouts/service.html.
+      seo:
+        type: WebPage
   - scope: { path: "", type: "areas" }
-    values: { layout: "region" }
+    values:
+      layout: "region"
+      seo:
+        type: WebPage
+
+# Site-wide jekyll-seo-tag defaults.
+logo: /assets/images/og-default.png
+twitter:
+  card: summary_large_image
 
 exclude:
   - README.md

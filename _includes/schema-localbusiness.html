@@ -1,0 +1,50 @@
+{%- comment -%}
+  Site-wide LocalBusiness JSON-LD. Rendered on every page from
+  _layouts/default.html. Pulls NAP, service area, and social
+  profiles from _config.yml so there's one source of truth.
+
+  Per-page overrides (e.g. per-region areaServed on area pages,
+  Service schema on service pages) are emitted from those layouts
+  in addition to this block. Multiple JSON-LD blocks on a page is
+  fine and supported by Google.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "{{ site.url }}/#business",
+  "name": {{ site.business.name | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "telephone": {{ site.business.phone | jsonify }},
+  "email": {{ site.business.email | jsonify }},
+  "image": {{ site.url | append: "/assets/images/services/seawall-cover.jpg" | jsonify }},
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bonita Springs",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {%- for city in site.business.service_area -%}
+    {"@type": "City", "name": {{ city | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ],
+  "knowsAbout": [
+    "Seawall stabilization",
+    "Polyurethane foam injection",
+    "Concrete lifting",
+    "Pool deck lifting",
+    "Driveway lifting",
+    "Warehouse slab lifting",
+    "Metal building insulation",
+    "Soil stabilization"
+  ]{%- if site.social -%},
+  "sameAs": [
+    {%- for link in site.social -%}
+    {{ link.url | jsonify }}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+  {%- endif %}
+}
+</script>
