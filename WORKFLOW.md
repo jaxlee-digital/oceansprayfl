@@ -396,30 +396,64 @@ Full identity policy: `personal/security/identities.md`.
 Same as jaxlee-site: drafts only until approved, only finished
 work goes up, explicit OK required before push.
 
-**Always send a screenshot of the local preview before asking for
-deploy approval.** Sheehan needs to see the rendered result, not
-just a diff or a description. Pattern:
+**Always send screenshots of the local preview before asking for
+deploy approval — desktop, tablet, and mobile.** Sheehan needs to
+see the rendered result at every breakpoint, not just a diff or a
+description. Mobile catches things desktop hides (nav collapses,
+hero cropping, CTA reachability, text reflow).
+
+Viewports we shoot:
+
+| Label | Size | Approximates |
+|---|---|---|
+| `desktop` | 1280×900 | Laptop, common-case visitor |
+| `tablet` | 820×1180 | iPad portrait |
+| `mobile` | 390×844 | iPhone 14/15 |
+
+Pattern:
 
 1. Make changes, restart preview if `_config.yml` was touched.
 2. Confirm the rebuild was clean (`podman logs --tail 10 oceanspray-preview`).
-3. Take a screenshot of the affected page(s):
+3. Shoot the affected page(s) at all three viewports. Reusable
+   helper:
 
    ```bash
-   mkdir -p /tmp/oceanspray-preview-shots && chmod 777 /tmp/oceanspray-preview-shots
-   podman run --rm --network host --user 0:0 \
-     -v /tmp/oceanspray-preview-shots:/out:Z \
-     docker.io/zenika/alpine-chrome --no-sandbox \
-     --hide-scrollbars --window-size=1280,900 \
-     --screenshot=/out/home.png \
-     http://localhost:4000/
-   cp /tmp/oceanspray-preview-shots/home.png \
-     /home/sheehan/.openclaw/workspace/oceanspray-rebrand-preview.png
+   shoot() {
+     # shoot <url-path> <slug>
+     local path="$1" slug="$2"
+     mkdir -p /tmp/oceanspray-preview-shots
+     chmod 777 /tmp/oceanspray-preview-shots
+     for vp in "desktop:1280,900" "tablet:820,1180" "mobile:390,844"; do
+       local label="${vp%%:*}" size="${vp##*:}"
+       podman run --rm --network host --user 0:0 \
+         -v /tmp/oceanspray-preview-shots:/out:Z \
+         docker.io/zenika/alpine-chrome --no-sandbox \
+         --hide-scrollbars --window-size="$size" \
+         --screenshot="/out/${slug}-${label}.png" \
+         "http://localhost:4000${path}"
+       cp "/tmp/oceanspray-preview-shots/${slug}-${label}.png" \
+         "/home/sheehan/.openclaw/workspace/oceanspray-${slug}-${label}.png"
+     done
+   }
+
+   # Examples:
+   shoot "/" home
+   shoot "/seawall-stabilization/" seawall
+   shoot "/contact/" contact
    ```
 
-4. Attach via `MEDIA:/home/sheehan/.openclaw/workspace/<file>.png`
-   in the reply.
-5. Wait for explicit "push" before committing.
-6. Clean up the workspace-root preview image after push.
+4. Attach all three viewport images via `MEDIA:` lines in the
+   reply, labeled clearly (e.g. "Desktop:", "Tablet:", "Mobile:").
+5. Check mobile specifically for: nav usability (hamburger works,
+   menu doesn't trap focus), no horizontal scroll, hero text
+   readable, CTAs reachable above the fold.
+6. Wait for explicit "push" before committing.
+7. Clean up the workspace-root preview images after push:
+   `rm -f /home/sheehan/.openclaw/workspace/oceanspray-*-{desktop,tablet,mobile}.png`
+
+Single-viewport exception: trivial copy edits (typo, one-word
+change in body text) can skip tablet/mobile if no layout change
+is possible. Default is shoot all three.
 
 ## Where things live
 
