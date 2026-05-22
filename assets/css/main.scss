@@ -17,7 +17,7 @@
 :root {
   --c-ink:        #383838;        /* Squarespace black */
   --c-ink-soft:   #4f5b62;
-  --c-muted:      #7f8a92;
+  --c-muted:      #5e6970;        /* WCAG AA: 5.63:1 on #fff */
   --c-line:       #e6ecef;
   --c-bg:         #ffffff;
   --c-bg-alt:     #f3f1e9;        /* lightAccent — warm cream */
@@ -754,9 +754,9 @@ a.site-nav__cta:hover { background-color: var(--c-warm-ink) !important; text-dec
 }
 .price-match p {
   margin: 0;
-  color: rgba(255,255,255,0.92);
+  color: #fff; /* WCAG AA: 5.17:1 on --c-brand */
 }
-.price-match p + p { margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.85; }
+.price-match p + p { margin-top: 0.5rem; font-size: 0.9rem; }
 
 /* ----- Archive ----- */
 .archive {
