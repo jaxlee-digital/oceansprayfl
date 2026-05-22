@@ -116,7 +116,9 @@ they introduce new components.
 
 ## Where things live
 
-- `_posts/` — blog posts
+- `_posts/` — published blog posts
+- `_drafts/` — local-only WIP drafts (**gitignored**; promote
+  to `_posts/` to publish)
 - `_services/` — service-page collection (rendered at `/services/<slug>/`)
 - `_areas/` — service-area collection (rendered at `/areas/<slug>/`)
 - `_data/` — structured data (testimonials, FAQs, etc. if used)
