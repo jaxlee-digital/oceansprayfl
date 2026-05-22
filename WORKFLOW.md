@@ -52,81 +52,24 @@ Business context: `personal/business/ocean-spray-fl.md`.
 5. Re-submit after structural changes (new service page, URL
    renames). Routine posts: Google re-reads on its own crawl.
 
-## Local preview (Podman)
+## Local preview
 
-Ruby is **not** installed on the host. Preview runs in a container.
-
-```bash
-SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
-
-# One-time bundler config:
-mkdir -p "$SITE/.bundle" && [ -f "$SITE/.bundle/config" ] || cat > "$SITE/.bundle/config" <<EOF
----
-BUNDLE_PATH: "vendor/bundle"
-EOF
-
-# Start preview (detached, localhost-only):
-podman run -d --name oceanspray-preview \
-  --userns=keep-id \
-  -v "$SITE":/site:Z \
-  -w /site \
-  -p 127.0.0.1:4000:4000 \
-  -e HOME=/tmp \
-  docker.io/library/ruby:3.2 \
-  sh -c "bundle install --quiet && bundle exec jekyll serve --host 0.0.0.0"
-
-# Browse: http://localhost:4000/
-```
-
-Management:
+See `skills/jekyll-podman-preview/` for the full recipe. Variables
+for this site:
 
 ```bash
-podman logs -f oceanspray-preview
-podman stop oceanspray-preview
-podman start oceanspray-preview
-podman rm -f oceanspray-preview
+SITE_SLUG="oceanspray"
+SITE_PATH="/home/sheehan/.openclaw/workspace/oceanspray-site"
+PORT="4000"
+BASEURL=""
+EXTRA_FLAGS=""
 ```
 
-Full Podman recipe and rationale: `infra/oceanspray-site/README.md`.
+Browse at `http://localhost:4000/`.
 
-### SELinux + Podman preview gotcha
-
-The Podman preview container mounts the site with `:Z`, assigning
-an SELinux `container_file_t` label. The OpenClaw `edit` tool
-writes files through a temp path and they land with `user_tmp_t`,
-which the container can't read. The next rebuild fails with:
-
-```
-Error: Permission denied @ rb_sysopen - /site/assets/css/main.scss
-```
-
-Restore the label after editing while the preview is running:
-
-```bash
-SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
-stat -c %C "$SITE/assets/css/main.scss"
-chcon --reference="$SITE/Gemfile" "$SITE/assets/css/main.scss"
-```
-
-Batch sweep (skips `_site`, `vendor`, `.git`, `.jekyll-cache`):
-
-```bash
-SITE=/home/sheehan/.openclaw/workspace/oceanspray-site
-find "$SITE" \
-  -path "$SITE/_site" -prune -o \
-  -path "$SITE/vendor" -prune -o \
-  -path "$SITE/.git" -prune -o \
-  -path "$SITE/.jekyll-cache" -prune -o \
-  -type f -print 2>/dev/null \
-  | while read f; do
-      ctx=$(stat -c %C "$f" 2>/dev/null)
-      if echo "$ctx" | grep -q "user_tmp_t"; then
-        chcon --reference="$SITE/Gemfile" "$f"
-      fi
-    done
-```
-
-Does not affect git or the live deploy.
+SELinux gotcha (label mismatch after `edit` writes) is covered in
+the skill's "Edit while running" step. Apply the `chcon` fix when
+the container errors with `Permission denied @ rb_sysopen`.
 
 ## Accessibility & standards
 
