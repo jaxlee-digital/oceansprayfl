@@ -266,10 +266,10 @@ a targeted void-fill, or just monitoring. No pressure, no obligation.
 
 ### Pairs naturally with
 
-**[Concrete Lifting]({{ '/services/concrete-lifting/' | relative_url }}).**
-Once the soil behind your seawall is stabilized, any sunken
-pavers, pool deck, or driveway slabs can be lifted with the same
-equipment in the same trip.
+**Adjacent concrete lifting.** Once the seawall soil is stabilized,
+sunken pool deck slabs, pavers, or walkways adjacent to the wall
+can often be lifted with the same equipment in the same visit.
+Ask us during your free assessment.
 
 </aside>
 </div>

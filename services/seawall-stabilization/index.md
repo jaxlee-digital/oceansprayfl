@@ -4,9 +4,9 @@ title: Seawall Stabilization in Southwest Florida
 subtitle: "Polyurethane injection behind the wall. About half the cost of replacement, finished in a day."
 permalink: /services/seawall-stabilization/
 description: >-
-  Failing seawall in Southwest Florida? Ocean Spray FL stabilizes
-  seawalls with polyurethane foam injection — about half the cost
-  of replacement, finished in a day, certified safe for marine
+  Failing seawall in Southwest Florida? Ocean Spray Foam stabilizes
+  seawalls with polyurethane injection — about half the cost of
+  replacement, finished in a day, certified safe for marine
   ecosystems. Free on-site assessment.
 ---
 
@@ -24,8 +24,6 @@ restores the structural support your wall needs — without
 demolition, without a marine contractor, at about half the cost
 of replacement.**
 
-[See the full service details →]({{ '/services/seawall-stabilization/' | relative_url | prepend: '/seawall-stabilization' | remove: '/services/seawall-stabilization' }})
-
 ---
 
 ## Where we work
@@ -36,7 +34,7 @@ of replacement.**
 
 ---
 
-## The short version
+## Stabilization vs. replacement
 
 | | Polyurethane Stabilization | Full Replacement |
 |---|---|---|

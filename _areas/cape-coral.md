@@ -1,9 +1,8 @@
 ---
 region: cape-coral
-title: "Cape Coral, FL: Seawall Stabilization & Concrete Lifting"
+title: "Cape Coral, FL: Seawall Stabilization"
 description: >-
-  Ocean Spray Foam services Cape Coral with seawall stabilization,
-  pool deck lifting, driveway lifting, and warehouse slab lifting.
-  Free on-site assessments across the canal grid and waterfront
-  communities.
+  Ocean Spray Foam stabilizes failing seawalls in Cape Coral with
+  certified polyurethane injection. Free on-site assessments across
+  the canal grid and waterfront communities.
 ---

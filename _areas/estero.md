@@ -1,9 +1,9 @@
 ---
 region: estero
-title: "Estero, FL: Seawall Stabilization & Concrete Lifting"
+title: "Estero, FL: Seawall Stabilization"
 description: >-
-  Ocean Spray Foam services Estero with seawall stabilization, pool
-  deck lifting, driveway lifting, and commercial slab lifting.
-  West Bay Club, Pelican Sound, Grandezza, Miromar Lakes, and the
-  Estero River corridor.
+  Ocean Spray Foam stabilizes failing seawalls in Estero with
+  certified polyurethane injection. West Bay Club, Pelican Sound,
+  Grandezza, Miromar Lakes, and the Estero River corridor.
+  Free assessments.
 ---

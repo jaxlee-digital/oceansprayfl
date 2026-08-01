@@ -1,8 +1,8 @@
 ---
 region: naples
-title: "Naples, FL: Seawall Stabilization & Concrete Lifting"
+title: "Naples, FL: Seawall Stabilization"
 description: >-
-  Ocean Spray Foam services Naples with seawall stabilization, pool
-  deck lifting, driveway lifting, and commercial slab lifting.
-  Free on-site assessments from Old Naples to Pelican Bay.
+  Ocean Spray Foam stabilizes failing seawalls in Naples with
+  certified polyurethane injection. Free on-site assessments
+  from Old Naples to Pelican Bay.
 ---

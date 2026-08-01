@@ -1,8 +1,8 @@
 ---
 region: marco-island
-title: "Marco Island, FL: Seawall Stabilization & Concrete Lifting"
+title: "Marco Island, FL: Seawall Stabilization"
 description: >-
-  Ocean Spray Foam services Marco Island with seawall stabilization,
-  pool deck lifting, driveway lifting, and dry-stack marina slab
-  lifting. Post-Ian void assessment specialists.
+  Ocean Spray Foam stabilizes failing seawalls on Marco Island with
+  certified polyurethane injection. Post-Ian void assessment
+  specialists. Free on-site assessments.
 ---

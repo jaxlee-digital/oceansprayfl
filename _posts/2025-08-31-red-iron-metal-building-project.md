@@ -1,6 +1,7 @@
 ---
 title: "Red iron metal building, project profile"
 date: 2025-08-31
+published: false
 author: Ocean Spray Foam
 tags: [metal-building, insulation, project-profile]
 excerpt: >-
