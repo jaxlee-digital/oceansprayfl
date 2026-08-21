@@ -5,12 +5,9 @@ permalink: /about/
 ---
 
 Ocean Spray Foam is a family-run polyurethane injection contractor based
-in Bonita Springs, Florida. We specialize in **seawall stabilization**
-and **concrete lifting**, using the same lightweight, eco-certified
-resin to solve two of the most common ground-movement problems in
-Southwest Florida coastal living. We also handle **metal building
-insulation** for residential, commercial, and agricultural projects
-across the region.
+in Bonita Springs, Florida. We specialize in **seawall stabilization**,
+using lightweight, eco-certified resin to stop the soil failure behind
+failing seawalls, bulkheads, and retaining walls across Southwest Florida.
 
 ## Why we focus on seawalls
 

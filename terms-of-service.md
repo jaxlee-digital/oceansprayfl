@@ -16,10 +16,8 @@ this site.
 
 Ocean Spray Foam provides information and service offerings for:
 
-- Spray Foam Insulation (residential, commercial, industrial)
-- Metal Building Insulation
-- Concrete & Pool Deck Leveling
 - Seawall Stabilization
+- Polyurethane Foam Injection
 - Geotechnical Soil Stabilization
 - Foundation Repair and Void Filling
 

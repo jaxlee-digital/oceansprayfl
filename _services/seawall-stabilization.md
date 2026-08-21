@@ -129,9 +129,9 @@ column behind your wall.
 - **Erosion channel sealing.** Close the paths water uses to pull
   soil out from under your property. Stops leaks measured in
   gallons per minute.
-- **Adjacent concrete lifting.** Sunken pavers, pool deck slabs,
-  driveway sections, or walkways near the wall can be lifted
-  with the same equipment in the same trip.
+- **Adjacent slab lifting.** Sunken pavers, pool deck slabs,
+  or walkways near the wall can be leveled with the same
+  equipment in the same trip.
 
 ## Environmentally responsible
 
@@ -266,9 +266,9 @@ a targeted void-fill, or just monitoring. No pressure, no obligation.
 
 ### Pairs naturally with
 
-**Adjacent concrete lifting.** Once the seawall soil is stabilized,
+**Adjacent lifting.** Once the seawall soil is stabilized,
 sunken pool deck slabs, pavers, or walkways adjacent to the wall
-can often be lifted with the same equipment in the same visit.
+can often be leveled with the same equipment in the same visit.
 Ask us during your free assessment.
 
 </aside>

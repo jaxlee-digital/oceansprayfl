@@ -19,9 +19,9 @@ anything to this repo.
 - **Baseurl:** `""` (empty; custom domain is live)
 - **Identity:** `jaxlee-digital` GitHub account, per-repo
   credential helper `/home/sheehan/.openclaw/bin/git-credential-jaxlee`
-- **Business positioning:** seawall stabilization (lead),
-  concrete lifting (cross-sell), metal building insulation
-  (secondary). **Not** general spray-foam insulation.
+- **Business positioning:** seawall stabilization (sole focus).
+  Concrete lifting and metal building insulation removed from site.
+  **Not** general spray-foam insulation.
 
 Full background: `infra/oceanspray-site/README.md`.
 Business context: `personal/business/ocean-spray-fl.md`.

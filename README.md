@@ -17,12 +17,11 @@ GitHub Pages, mirroring the structure of `jaxlee-site`.
 
 Refocused away from general spray-foam insulation toward:
 
-1. **Seawall stabilization** (lead service, polyurethane injection)
-2. **Concrete lifting** (paired emphasis - same technology, same crew)
-3. **Metal building insulation** (kept as secondary)
+1. **Seawall stabilization** (sole service focus, polyurethane injection)
 
-General residential/commercial insulation has been **dropped** from
-the new site.
+Concrete lifting and metal building insulation have been **removed** from
+the site. Seawall-adjacent slab leveling is still mentioned as an
+add-on within seawall jobs, but not promoted as a standalone service.
 
 ## Structure
 

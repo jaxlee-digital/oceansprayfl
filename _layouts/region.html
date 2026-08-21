@@ -15,7 +15,7 @@ layout: default
   <header class="sr-hero">
     <div class="sr-container">
       <p class="sr-eyebrow">{{ region.county }} <span class="sr-eyebrow__dot">·</span> Southwest Florida</p>
-      <h1 class="sr-hero__title">{{ region_name }}, FL: Seawall &amp; Concrete Lifting Services</h1>
+      <h1 class="sr-hero__title">{{ region_name }}, FL: Seawall Stabilization Services</h1>
       <p class="sr-hero__lead">{{ page.lead | default: region.geographic_summary }}</p>
       <div class="sr-actions">
         <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Free Assessment in {{ region_name }}</a>
@@ -146,8 +146,6 @@ layout: default
           <p class="sr-section-label">Browse by service</p>
           <ul class="sr-crosslinks__list">
             <li><a href="{{ '/services/seawall-stabilization/' | relative_url }}">Seawall Stabilization <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
-            <li><a href="{{ '/services/concrete-lifting/' | relative_url }}">Concrete Lifting <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
-            <li><a href="{{ '/services/metal-building-insulation/' | relative_url }}">Metal Building Insulation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
             <li><a href="{{ '/service-area/' | relative_url }}">Full service area <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
           </ul>
         </div>
@@ -179,20 +177,6 @@ layout: default
         }
       },
       "description": "Polyurethane foam injection behind failing seawalls in {{ region_name }}, FL. Restores stability without full replacement."
-    },
-    {
-      "@type": "Service",
-      "serviceType": "Concrete lifting",
-      "provider": {"@id": "{{ site.url }}/#business"},
-      "areaServed": {
-        "@type": "City",
-        "name": {{ region_name | jsonify }},
-        "containedInPlace": {
-          "@type": "AdministrativeArea",
-          "name": {{ region.county | jsonify }}
-        }
-      },
-      "description": "Driveway, pool deck, and warehouse slab lifting in {{ region_name }}, FL using polyurethane foam injection."
     },
     {
       "@type": "WebPage",
