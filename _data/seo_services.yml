@@ -111,6 +111,7 @@
     - step: "Verification and cleanup"
       detail: "We re-sound the cap, confirm no remaining voids, patch the ports flush, and leave the property clean."
   trust_signals:
+    - "10-year written warranty on every stabilization job"
     - "Certified eco-friendly polyurethane resin, safe for marine ecosystems"
     - "Family-owned, Bonita Springs based, fully insured"
     - "Free assessments across Southwest Florida"

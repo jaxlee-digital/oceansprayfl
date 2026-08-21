@@ -4,9 +4,8 @@ slug: seawall-stabilization
 summary: >-
   Certified, eco-friendly polyurethane resin injected behind your
   seawall, bulkhead, or retaining wall. About half the cost of full
-  replacement, with a written-estimate price match. Fills voids,
-  binds the soil, and stops the sink. No demolition, no barges, no
-  marine impact.
+  replacement. 10-year warranty. Fills voids, binds the soil, and
+  stops the sink. No demolition, no barges, no marine impact.
 order: 1
 ---
 
@@ -139,9 +138,14 @@ That matters when you're working inches from the bay.
 
 ## Key advantages
 
+- **10-year warranty.** Every stabilization job is backed by a
+  written 10-year warranty. Not a verbal promise — a document.
 - **About half the cost of replacement,** with a written-estimate
   price match against any licensed Florida polyurethane
   contractor.
+- **Protects your property value.** A failing seawall is visible
+  at inspection and tanks waterfront value fast. Stabilization
+  closes that risk before it hits the listing.
 - **Doubles the life of your wall.** A stabilized wall keeps
   working for decades instead of being torn out at year 15 or 20.
 - **Lightweight and strong.** Stabilizes soil without adding
