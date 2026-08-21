@@ -31,9 +31,10 @@ a same- or next-day on-site assessment.
 - **Email:** [{{ site.business.email }}]({{ site.business.email_href }})
 - **Headquarters:** {{ site.business.hq }}
 
-Prefer email? Include your property address, a short description of
-the problem (sinking slab, leaning seawall, void behind cap, etc.),
-a few photos if you can, and the best phone number to reach you at.
+Prefer email? Include your property address, a short description
+of the problem (leaning wall, cracked cap, void or depression
+behind the cap, soil washing out through weep holes, etc.), a
+few photos if you can, and the best phone number to reach you at.
 Send it to [{{ site.business.email }}]({{ site.business.email_href }}).
 
 <!--

@@ -4,31 +4,33 @@ sitemap: false
 ---
 # Ocean Spray Foam
 
-> Family-run polyurethane injection contractor based in Bonita Springs, Florida. Specializes in seawall stabilization and concrete lifting using lightweight, eco-certified resin. Serving Southwest Florida (Collier, Lee, and Hendry counties).
+> Family-run seawall stabilization contractor based in Bonita Springs, Florida. Uses certified, eco-friendly polyurethane injection to restore failing seawalls, bulkheads, and retaining walls across Southwest Florida.
 
-Ocean Spray Foam solves ground-movement problems for coastal and inland properties: failing seawalls, sunken driveways and pool decks, settled warehouse slabs. Polyurethane injection is faster, lighter, and less disruptive than mudjacking or full replacement. Secondary line of business: spray-foam insulation for metal buildings.
+Ocean Spray Foam specializes in one problem: failing seawalls in coastal Southwest Florida. Polyurethane resin is injected behind the wall to fill voids, bind the eroded fill, and restore the soil column that supports the wall. Typical projects finish in a day at about half the cost of full replacement, with no demolition, no barges, and no marine equipment. Free on-site assessments across Collier and Lee counties.
 
 ## Services
 
-- [Seawall stabilization](https://oceansprayfl.com/services/seawall-stabilization/): Polyurethane injection behind failing seawalls to fill voids, stop soil loss, and prevent cap failure. Lead service.
-- [Driveway lifting](https://oceansprayfl.com/driveway-lifting/): Residential driveway slab raising via foam injection. Drive on it the same day.
-- [Pool deck lifting](https://oceansprayfl.com/pool-deck-lifting/): Lifting and leveling settled pool decks without demo.
-- [Warehouse slab lifting](https://oceansprayfl.com/warehouse-slab-lifting/): Commercial concrete slab leveling for warehouses and industrial floors. Operations-aware, OSHA-aware.
-- [Concrete lifting (overview)](https://oceansprayfl.com/services/concrete-lifting/): Cross-service detail on foam-jacking sunken slabs back to grade.
-- [Metal building insulation](https://oceansprayfl.com/services/metal-building-insulation/): Closed-cell spray foam for pole barns, metal buildings, and warehouses. Secondary service line.
+- [Seawall stabilization](https://oceansprayfl.com/services/seawall-stabilization/): Polyurethane injection behind failing seawalls, bulkheads, and retaining walls. Fills voids, binds soil, seals erosion channels, restores structural support. About half the cost of full replacement.
 
 ## Service area
 
-- [Service area overview](https://oceansprayfl.com/service-area/): Bonita Springs, Naples, Estero, Fort Myers, Marco Island, Lely, Everglades City, Immokalee, LaBelle, Felda. Collier, Lee, and Hendry counties.
+- [Service area overview](https://oceansprayfl.com/service-area/): Bonita Springs, Naples, Estero, Fort Myers, Cape Coral, Sanibel, and Marco Island. Collier and Lee counties.
+- [Seawall stabilization in Bonita Springs](https://oceansprayfl.com/seawall-stabilization/bonita-springs/)
+- [Seawall stabilization in Cape Coral](https://oceansprayfl.com/seawall-stabilization/cape-coral/)
+- [Seawall stabilization in Estero](https://oceansprayfl.com/seawall-stabilization/estero/)
+- [Seawall stabilization in Fort Myers](https://oceansprayfl.com/seawall-stabilization/fort-myers/)
+- [Seawall stabilization on Marco Island](https://oceansprayfl.com/seawall-stabilization/marco-island/)
+- [Seawall stabilization in Naples](https://oceansprayfl.com/seawall-stabilization/naples/)
+- [Seawall stabilization on Sanibel & Captiva](https://oceansprayfl.com/seawall-stabilization/sanibel/)
 
 ## About
 
-- [About](https://oceansprayfl.com/about/): Company background and approach.
-- [Contact](https://oceansprayfl.com/contact/): Phone (239) 444-7792, email info@oceansprayfl.com.
-- [Blog](https://oceansprayfl.com/blog/): Articles on seawall stabilization, concrete lifting, and SWFL ground conditions.
+- [About](https://oceansprayfl.com/about/): Company background, focus, and approach.
+- [Contact](https://oceansprayfl.com/contact/): Phone (239) 444-7792, email info@oceansprayfl.com. Free assessments across SWFL.
+- [Blog](https://oceansprayfl.com/blog/): Field notes and project profiles on seawall stabilization in Southwest Florida.
 
 ## Optional
 
 - [Privacy policy](https://oceansprayfl.com/privacy-policy/)
-- [Terms of service](https://oceansprayfl.com/terms-of-service/)
+- [Terms & conditions](https://oceansprayfl.com/terms-of-service/)
 - [Sitemap](https://oceansprayfl.com/sitemap.xml)

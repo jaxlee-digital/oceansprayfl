@@ -43,7 +43,7 @@ website.
 We use the information we collect to:
 
 - Respond to inquiries and provide estimates
-- Schedule and deliver insulation or concrete services
+- Schedule and deliver seawall stabilization services
 - Improve our website and services
 - Send service updates or follow-ups
 - Comply with legal obligations

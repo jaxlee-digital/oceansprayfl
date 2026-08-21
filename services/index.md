@@ -24,10 +24,12 @@ About half the cost of full replacement — finished in a day.
 
 ## City service directory
 
-{% assign seawall_regions = site.data.regions | where_exp: "r", "r.weight.seawall != nil and r.weight.seawall != 'skip'" %}
 <ul>
-{% for r in seawall_regions %}
-  <li><a href="{{ '/seawall-stabilization/' | append: r.slug | append: '/' | relative_url }}">Seawall stabilization in {{ r.name }}</a></li>
+{% for r in site.data.regions %}
+  {% assign w = r.weight.seawall %}
+  {% if w and w != 'skip' %}
+    <li><a href="{{ '/seawall-stabilization/' | append: r.slug | append: '/' | relative_url }}">Seawall stabilization in {{ r.name }}</a></li>
+  {% endif %}
 {% endfor %}
 </ul>
 

@@ -49,11 +49,10 @@ fit before anyone wastes a trip.
 
 ## Why local matters
 
-Coastal soil conditions in SWFL are not the same as the inland
-mainland or other parts of Florida. The mix of sandy fill, tidal
-fluctuation, and seasonal storm surge creates a specific kind of
-void-and-erosion pattern behind seawalls and beneath slabs.
-Working in the region every day means we know what we're looking at
-when we get there.
+Coastal soil conditions in SWFL are not like inland Florida or
+anywhere else in the state. The mix of sandy fill, tidal
+fluctuation, and seasonal storm surge creates a specific pattern
+of voids and erosion behind seawalls. Working in the region every
+day means we know what we're looking at when we get there.
 
 [Request a free assessment →]({{ '/contact/' | relative_url }})

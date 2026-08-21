@@ -9,9 +9,6 @@ layout: default
 
 {% case page.service %}
   {% when "seawall-stabilization" %}{% assign region_context = region.seawall_context %}
-  {% when "pool-deck-lifting" %}{% assign region_context = region.pool_deck_context %}
-  {% when "driveway-lifting" %}{% assign region_context = region.driveway_context %}
-  {% when "warehouse-slab-lifting" %}{% assign region_context = region.warehouse_context %}
 {% endcase %}
 
 <article class="sr sr--{{ service.variant }}" data-service="{{ service.slug }}">
@@ -200,29 +197,34 @@ layout: default
     </div>
   </section>
 
-  {% comment %} Cross-links, white band {% endcomment %}
+  {% comment %} Cross-links, white band. "Other services" is hidden while
+  we're seawall-only, but the loop stays in place so adding services
+  later is a data-only change. {% endcomment %}
   <section class="sr-band sr-band--white">
     <div class="sr-container">
       <div class="sr-crosslinks">
+        {%- capture other_services -%}
+          {% for s in site.data.seo_services %}
+            {% if s.slug != page.service %}
+              {% case s.slug %}
+                {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
+              {% endcase %}
+              {% assign w = region.weight[weight_key] %}
+              {% if w != "skip" and w != nil %}
+<li><a href="{{ '/' | append: s.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">{{ s.name }} in {{ region_name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {%- endcapture -%}
+        {% assign other_services = other_services | strip %}
+        {% if other_services != "" %}
         <div class="sr-crosslinks__col">
           <p class="sr-section-label">Other services in {{ region_name }}</p>
           <ul class="sr-crosslinks__list">
-            {% for s in site.data.seo_services %}
-              {% if s.slug != page.service %}
-                {% case s.slug %}
-                  {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
-                  {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
-                  {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
-                  {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
-                {% endcase %}
-                {% assign w = region.weight[weight_key] %}
-                {% if w != "skip" and w != nil %}
-                  <li><a href="{{ '/' | append: s.slug | append: '/' | append: region.slug | append: '/' | relative_url }}">{{ s.name }} in {{ region_name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
+            {{ other_services }}
           </ul>
         </div>
+        {% endif %}
 
         <div class="sr-crosslinks__col">
           <p class="sr-section-label">{{ service_name }} nearby</p>
@@ -231,9 +233,6 @@ layout: default
               {% if r.slug != region.slug %}
                 {% case page.service %}
                   {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}
-                  {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}
-                  {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}
-                  {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}
                 {% endcase %}
                 {% assign w = r.weight[weight_key] %}
                 {% if w != "skip" and w != nil %}

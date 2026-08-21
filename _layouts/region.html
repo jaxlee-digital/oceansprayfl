@@ -51,9 +51,6 @@ layout: default
         {% for service in site.data.seo_services %}
           {% case service.slug %}
             {% when "seawall-stabilization" %}{% assign weight_key = "seawall" %}{% assign ctx = region.seawall_context %}
-            {% when "pool-deck-lifting" %}{% assign weight_key = "pool_deck" %}{% assign ctx = region.pool_deck_context %}
-            {% when "driveway-lifting" %}{% assign weight_key = "driveway" %}{% assign ctx = region.driveway_context %}
-            {% when "warehouse-slab-lifting" %}{% assign weight_key = "warehouse" %}{% assign ctx = region.warehouse_context %}
           {% endcase %}
           {% assign w = region.weight[weight_key] %}
           {% if w and w != "skip" %}

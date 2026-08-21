@@ -16,13 +16,13 @@ this site.
 
 Ocean Spray Foam provides information and service offerings for:
 
-- Seawall Stabilization
-- Polyurethane Foam Injection
-- Geotechnical Soil Stabilization
-- Foundation Repair and Void Filling
+- Seawall stabilization
+- Polyurethane foam injection
+- Soil stabilization and void filling behind seawalls,
+  bulkheads, and retaining walls
 
-We serve the Southwest Florida area, including Everglades City,
-Marco Island, Naples, Bonita Springs, Estero, and Fort Myers.
+We serve Southwest Florida, including Bonita Springs, Naples,
+Estero, Fort Myers, Cape Coral, Sanibel, and Marco Island.
 
 ## 2. Use of the Website
 
