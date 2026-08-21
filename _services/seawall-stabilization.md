@@ -249,8 +249,7 @@ instead of a six-figure surprise.
 ### Price-match guarantee
 
 Bring us a written estimate from any licensed Florida
-polyurethane seawall contractor (Seawall Kings, Seawall Savers,
-or others). We'll match it.
+polyurethane seawall contractor. We'll match it.
 
 ### Free inspections
 
