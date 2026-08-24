@@ -134,7 +134,7 @@ layout: default
           <ul class="sr-crosslinks__list">
             {% for r in site.data.regions %}
               {% if r.slug != region.slug %}
-                <li><a href="{{ '/areas/' | append: r.slug | append: '/' | relative_url }}">{{ r.name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="{{ '/seawall-stabilization/' | append: r.slug | append: '/' | relative_url }}">{{ r.name }} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
               {% endif %}
             {% endfor %}
           </ul>

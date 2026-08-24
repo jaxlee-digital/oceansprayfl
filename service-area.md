@@ -30,7 +30,7 @@ services we run there, neighborhoods, and ZIP coverage.
 <ul class="region-index">
 {% for r in site.data.regions %}
   <li>
-    <a href="{{ '/areas/' | append: r.slug | append: '/' | relative_url }}">
+    <a href="{{ '/seawall-stabilization/' | append: r.slug | append: '/' | relative_url }}">
       <strong>{{ r.name }}</strong>
       <span>{{ r.county }}</span>
     </a>
